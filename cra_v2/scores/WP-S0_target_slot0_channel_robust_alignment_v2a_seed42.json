@@ -1,0 +1,200 @@
+{
+  "receipt": {
+    "task_id": "WP-S0",
+    "plan_sha256": "76f3bbcba893b495d7ea5b77e87a94125cd5b977f3fe87685545428fbabf6eb0",
+    "task_manifest_sha256": "510c579fb94cc90634f2c3d9b3b04ae69dd9cef596ace022a33664ea5ec8d09e",
+    "private_audit_sha256": "fe4a26f1848fa70b1701a0a0c0afe6fb2bfa6fc6e74bf894659061c2dbda8e03",
+    "full_public_bank_sha_verified": true,
+    "private_origin_embargo_verified": true,
+    "final_signal_or_label_rows_decoded": false
+  },
+  "checkpoint_sha256": "d7479142b3836da0b840f3821f4d3e33af94563f47795911d1c8f210320f40b1",
+  "evaluated_split": "target_dev_only",
+  "n_samples": 750,
+  "accuracy": 0.668,
+  "macro_f1": 0.6478293229780643,
+  "per_class_recall": [
+    0.32,
+    0.7066666666666667,
+    0.5,
+    0.8266666666666667,
+    0.9866666666666667
+  ],
+  "confusion_matrix": [
+    [
+      48,
+      53,
+      31,
+      15,
+      3
+    ],
+    [
+      3,
+      106,
+      6,
+      12,
+      23
+    ],
+    [
+      26,
+      16,
+      75,
+      20,
+      13
+    ],
+    [
+      4,
+      5,
+      12,
+      124,
+      5
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      148
+    ]
+  ],
+  "support_per_class": [
+    150,
+    150,
+    150,
+    150,
+    150
+  ],
+  "checkpoint_identity": {
+    "run_id": "WP-S0_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+    "task_id": "WP-S0",
+    "dataset": "waterpump",
+    "channels": {
+      "source": [
+        0,
+        1,
+        2
+      ],
+      "target": [
+        0
+      ]
+    },
+    "variant": "channel_robust_alignment_v2a",
+    "selected_epoch": 19,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0005392798405373469
+    },
+    "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+    "branch_start_identity": {
+      "model_state_sha256": "24ea729146bf96cc05b12145669277b843f297b96dd3e8cc529179aed4df6167",
+      "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+      "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+      "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+      "source_slot_cycle": {
+        "physical_slots": [
+          0,
+          1,
+          2
+        ],
+        "initial_cursor": 1,
+        "cursor": 1,
+        "rows_drawn": 0
+      },
+      "target_slot_cycle": {
+        "physical_slots": [
+          0
+        ],
+        "initial_cursor": 0,
+        "cursor": 0,
+        "rows_drawn": 0
+      },
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+    },
+    "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+    "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+    "public_manifest_sha256": "510c579fb94cc90634f2c3d9b3b04ae69dd9cef596ace022a33664ea5ec8d09e",
+    "public_plan_sha256": "76f3bbcba893b495d7ea5b77e87a94125cd5b977f3fe87685545428fbabf6eb0",
+    "code_sha256": {
+      "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+      "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+      "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+      "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+      "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+      "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+      "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+      "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+    }
+  },
+  "target_final_evaluated": false,
+  "evaluation_code_sha256": {
+    "evaluate_channel_robust_alignment_v2_dev.py": "4cc0eed877a23d62b91ddfb0616e2d8c6836e509a037384f88a3cf246ff3171e",
+    "private_evaluator.py": "4427adaf5caf23cf88f1cf81dc493959dce859ac6e030d36634939689276c8f1",
+    "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993"
+  }
+}

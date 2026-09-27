@@ -1,0 +1,9 @@
+﻿evidence_tier,dataset_role,comparison,channel_setting,family_label,n_pairs,n_model_seeds,accuracy_delta_mean,accuracy_delta_sd,macro_f1_delta_mean,macro_f1_delta_sd,jointly_improved_pairs,new_zero_recall_pairs
+development,laboratory,frozen_v4_reference,3-to-1,double-cross,6,1,-0.045,0.0651749781571,-0.0316916019419,0.0710277250165,1,1
+development,laboratory,frozen_v4_reference,3-to-1,same-condition cross-sensor,6,1,0.105666666667,0.155998717943,0.129402807985,0.182570821307,5,0
+development,laboratory,frozen_v4_reference,3-to-3,double-cross,2,1,-0.0473333333333,0.0103708994574,-0.0214872540853,0.0165823606759,0,0
+development,laboratory,frozen_v4_reference,3-to-3,same-condition cross-sensor,2,1,0.116333333333,0.245601755332,0.151289771926,0.300289906158,1,0
+development,laboratory,paired_causal,3-to-1,double-cross,6,1,-0.0283333333333,0.0498669340456,-0.028481636082,0.0367161202655,1,2
+development,laboratory,paired_causal,3-to-1,same-condition cross-sensor,6,1,0.017,0.0303102476254,0.0170170107183,0.0224754124443,5,0
+development,laboratory,paired_causal,3-to-3,double-cross,2,1,0.008,0.011313708499,0.00627578036024,0.00887529369993,1,0
+development,laboratory,paired_causal,3-to-3,same-condition cross-sensor,2,1,-0.00133333333333,0.00188561808316,-0.00181516142252,0.00256702590162,0,0

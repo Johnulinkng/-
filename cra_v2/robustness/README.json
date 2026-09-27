@@ -1,0 +1,16 @@
+{
+  "schema": "channel_robust_v2_awgn_usage_v1",
+  "allowed_after_screen_gate": true,
+  "evaluated_split": "target_dev_only",
+  "snr_db": [
+    20,
+    10,
+    0
+  ],
+  "noise_seeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "target_final_evaluated": false
+}

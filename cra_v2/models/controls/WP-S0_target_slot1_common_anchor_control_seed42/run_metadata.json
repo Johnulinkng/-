@@ -1,0 +1,300 @@
+{
+  "run_id": "WP-S0_source012_target_slot1_common_anchor_control_seed42_cuda",
+  "stage": "common_anchor_control",
+  "task_id": "WP-S0",
+  "dataset": "waterpump",
+  "public_root": "/mnt/d/3800/data_versions/antipair_v1_waterpump_source_first",
+  "public_manifest_sha256": "510c579fb94cc90634f2c3d9b3b04ae69dd9cef596ace022a33664ea5ec8d09e",
+  "public_plan_sha256": "76f3bbcba893b495d7ea5b77e87a94125cd5b977f3fe87685545428fbabf6eb0",
+  "channels": {
+    "source": [
+      0,
+      1,
+      2
+    ],
+    "target": [
+      1
+    ]
+  },
+  "window_size": 2048,
+  "num_classes": 5,
+  "variant": "common_anchor_control",
+  "variant_contract": {
+    "adaptation": false,
+    "shared_anchor": true
+  },
+  "loss_contract": {
+    "fusion_residual_strength": 0.5,
+    "masked_ce_weight": 0.5,
+    "consistency_weight": 0.1,
+    "attention_balance_weight": 0.01,
+    "channel_alignment_weight": 0.5,
+    "alignment_weight": 0.02,
+    "alignment_gradient_rule": "apply only when raw feature-gradient dot source-gradient >= 0",
+    "mmd": "equal-row unbiased 5-kernel Gaussian MMD",
+    "channel_draw": "independent domain RNG; random offset then balanced physical-slot cycle"
+  },
+  "model_config": {
+    "input_channels": 3,
+    "spectral_grid": "low3k_pool2",
+    "encoder_width": 64,
+    "fusion": "bounded_attention",
+    "fusion_residual_strength": 0.5
+  },
+  "model_details": {
+    "identity": "channel_robust_alignment_v2a",
+    "input_source_channels": 3,
+    "input_target_channels": "observed selected channels only",
+    "window": "2048 symmetric Hann; centered; rFFT DC removed",
+    "spectral_bins": 128,
+    "power_pool": "sum 2 adjacent powers among first 256 positive-frequency bins, then unit-sum power and log(p+1e-8)",
+    "spectrum_precision": "float32 torch; CPU probe used float64 numpy",
+    "encoder": "shared 128-64-ReLU-64-ReLU MLP",
+    "encoder_kind": "mlp",
+    "fusion": "uniform-anchored bounded content attention after shared sensor encoding",
+    "normalization": "fixed source-train per-frequency population std over rows and observed channels",
+    "mean_adaptation": false,
+    "zscore_adaptation": true,
+    "source_channel_subsets": "training_policy_controlled_by_runner",
+    "subset_policy": "disabled",
+    "parameter_count": 12805,
+    "calibration": {
+      "source_train": {
+        "rows": 1500,
+        "channels": 3,
+        "sensor_windows": 4500,
+        "feature_bytes_sha256": "257ea4be88ab8e8ba7aa447612a01411e7ef5a8348c969aa910863ec4b56eed4",
+        "device": "cpu",
+        "ordered_original_indices_sha256": null,
+        "labels_used": false,
+        "drop_last": false,
+        "spectral_grid": "low3k_pool2"
+      },
+      "target_train": {
+        "rows": 1500,
+        "channels": 1,
+        "sensor_windows": 1500,
+        "feature_bytes_sha256": "ce1c4a523c2d09fcadc116ee156a63443fbf2b365fd424cb55d5ee73f10737d7",
+        "device": "cpu",
+        "ordered_original_indices_sha256": null,
+        "labels_used": false,
+        "drop_last": false,
+        "spectral_grid": "low3k_pool2"
+      },
+      "source_transform": "(log_power - source_train_mean) / source_train_std",
+      "target_transform": "(log_power - target_train_mean) / target_train_std",
+      "target_labels_used": false,
+      "validation_or_final_statistics_used": false,
+      "source_anchor_frozen": true,
+      "target_pending": false,
+      "spectral_grid": "low3k_pool2"
+    },
+    "spectral_grid": "low3k_pool2",
+    "source_statistics_scope": "pooled",
+    "positive_frequency_bins_retained": 256,
+    "power_pool_width": 2,
+    "fusion_mode": "bounded_attention",
+    "target_inference": "all observed target sensors; no channel imputation",
+    "fusion_parameter_count": 64,
+    "fusion_initialization": "zero score; exact arithmetic mean",
+    "fusion_residual_strength": 0.5,
+    "single_sensor_fusion": "identity",
+    "calibration_lifecycle": "one source-only anchor calibration; one target-train-only calibration per arm",
+    "adaptation_selection": "fixed 20-epoch endpoint; no target-label selection"
+  },
+  "calibration": {
+    "source_train": {
+      "rows": 1500,
+      "channels": 3,
+      "sensor_windows": 4500,
+      "feature_bytes_sha256": "257ea4be88ab8e8ba7aa447612a01411e7ef5a8348c969aa910863ec4b56eed4",
+      "device": "cpu",
+      "ordered_original_indices_sha256": null,
+      "labels_used": false,
+      "drop_last": false,
+      "spectral_grid": "low3k_pool2"
+    },
+    "target_train": {
+      "rows": 1500,
+      "channels": 1,
+      "sensor_windows": 1500,
+      "feature_bytes_sha256": "ce1c4a523c2d09fcadc116ee156a63443fbf2b365fd424cb55d5ee73f10737d7",
+      "device": "cpu",
+      "ordered_original_indices_sha256": null,
+      "labels_used": false,
+      "drop_last": false,
+      "spectral_grid": "low3k_pool2"
+    },
+    "source_transform": "(log_power - source_train_mean) / source_train_std",
+    "target_transform": "(log_power - target_train_mean) / target_train_std",
+    "target_labels_used": false,
+    "validation_or_final_statistics_used": false,
+    "source_anchor_frozen": true,
+    "target_pending": false,
+    "spectral_grid": "low3k_pool2"
+  },
+  "target_statistics": "zscore_train_only",
+  "target_train_fault_labels": "required_minus_one",
+  "target_dev_or_final_loader_constructed": false,
+  "synchronous_pairs_used": false,
+  "code_sha256": {
+    "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+    "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+    "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+    "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+    "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+    "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+    "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+    "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+  },
+  "seed": 42,
+  "mask_seed": 424284,
+  "source_draw_seed": 525294,
+  "target_draw_seed": 626304,
+  "target_dev_evaluated": false,
+  "target_final_evaluated": false,
+  "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+  "anchor_selected_epoch": 36,
+  "anchor_source_val": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_class_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "support": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ],
+    "confusion_matrix": [
+      [
+        150,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        150,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        150,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "loss": 0.0004605394556031873
+  },
+  "adaptation_epochs": 20,
+  "selection": "fixed branch epoch 19; no target-label or source-val checkpoint choice",
+  "alignment_enabled": false,
+  "branch_start_identity": {
+    "model_state_sha256": "61150db808769a9cc6f373637603f80454eb329a0e73e3fa67161adf04fa9799",
+    "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+    "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+    "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+    "source_slot_cycle": {
+      "physical_slots": [
+        0,
+        1,
+        2
+      ],
+      "initial_cursor": 1,
+      "cursor": 1,
+      "rows_drawn": 0
+    },
+    "target_slot_cycle": {
+      "physical_slots": [
+        1
+      ],
+      "initial_cursor": 0,
+      "cursor": 0,
+      "rows_drawn": 0
+    },
+    "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+  },
+  "kernel_contract": {
+    "kind": "source_anchor_fixed_five_rbf",
+    "pool_seed": 30042,
+    "pool_size": 256,
+    "pool_local_indices_sha256": "6b543df7dc6edb01d08bcf62a3d568bf288d35a3ccd0f0e75435e7dbd0122442",
+    "multipliers": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "kernel_weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fused": {
+      "median_squared_distance": 156.3238067626953,
+      "bandwidths": [
+        39.08095169067383,
+        78.16190338134766,
+        156.3238067626953,
+        312.6476135253906,
+        625.2952270507812
+      ]
+    },
+    "channel": {
+      "median_squared_distance": 164.69338989257812,
+      "bandwidths": [
+        41.17334747314453,
+        82.34669494628906,
+        164.69338989257812,
+        329.38677978515625,
+        658.7735595703125
+      ]
+    },
+    "source_feature_pool_sha256": "a42bb58114dd6c8b2d5a5c3e9ae293a5d60931701b8431c28cd810cce754cf8a",
+    "target_inputs_used": false,
+    "fixed_before_branch_training": true
+  },
+  "paired_branch_contract": "same anchor model+optimizer+scheduler+all RNG; identical 20-epoch source batches/masks; candidate differs only by gated fixed-kernel alignment"
+}

@@ -1,0 +1,200 @@
+{
+  "receipt": {
+    "task_id": "WP-D1",
+    "plan_sha256": "76f3bbcba893b495d7ea5b77e87a94125cd5b977f3fe87685545428fbabf6eb0",
+    "task_manifest_sha256": "8086ba04d13697e7b13a3f78c0a7a91076dadd6bf217195e1b4d01689d03a5d7",
+    "private_audit_sha256": "fe4a26f1848fa70b1701a0a0c0afe6fb2bfa6fc6e74bf894659061c2dbda8e03",
+    "full_public_bank_sha_verified": true,
+    "private_origin_embargo_verified": true,
+    "final_signal_or_label_rows_decoded": false
+  },
+  "checkpoint_sha256": "4a45480f1ce30a6a7468d9dbdcc9b0df7cf3c384f849fc80bb05db8c0207e8e3",
+  "evaluated_split": "target_dev_only",
+  "n_samples": 750,
+  "accuracy": 0.44533333333333336,
+  "macro_f1": 0.38624549665359537,
+  "per_class_recall": [
+    0.08666666666666667,
+    0.31333333333333335,
+    0.04666666666666667,
+    0.9533333333333334,
+    0.8266666666666667
+  ],
+  "confusion_matrix": [
+    [
+      13,
+      78,
+      34,
+      25,
+      0
+    ],
+    [
+      16,
+      47,
+      26,
+      9,
+      52
+    ],
+    [
+      7,
+      0,
+      7,
+      0,
+      136
+    ],
+    [
+      0,
+      5,
+      2,
+      143,
+      0
+    ],
+    [
+      17,
+      6,
+      3,
+      0,
+      124
+    ]
+  ],
+  "support_per_class": [
+    150,
+    150,
+    150,
+    150,
+    150
+  ],
+  "checkpoint_identity": {
+    "run_id": "WP-D1_source012_target_slot0_common_anchor_control_seed42_cuda",
+    "task_id": "WP-D1",
+    "dataset": "waterpump",
+    "channels": {
+      "source": [
+        0,
+        1,
+        2
+      ],
+      "target": [
+        0
+      ]
+    },
+    "variant": "common_anchor_control",
+    "selected_epoch": 19,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.00032598419072261704
+    },
+    "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+    "branch_start_identity": {
+      "model_state_sha256": "5c8cbb7beb56297a8b3fb0c289fbd875b95377612f176fe6b8e3527759bf934c",
+      "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+      "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+      "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+      "source_slot_cycle": {
+        "physical_slots": [
+          0,
+          1,
+          2
+        ],
+        "initial_cursor": 1,
+        "cursor": 1,
+        "rows_drawn": 0
+      },
+      "target_slot_cycle": {
+        "physical_slots": [
+          0
+        ],
+        "initial_cursor": 0,
+        "cursor": 0,
+        "rows_drawn": 0
+      },
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+    },
+    "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+    "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+    "public_manifest_sha256": "8086ba04d13697e7b13a3f78c0a7a91076dadd6bf217195e1b4d01689d03a5d7",
+    "public_plan_sha256": "76f3bbcba893b495d7ea5b77e87a94125cd5b977f3fe87685545428fbabf6eb0",
+    "code_sha256": {
+      "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+      "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+      "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+      "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+      "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+      "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+      "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+      "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+    }
+  },
+  "target_final_evaluated": false,
+  "evaluation_code_sha256": {
+    "evaluate_channel_robust_alignment_v2_dev.py": "4cc0eed877a23d62b91ddfb0616e2d8c6836e509a037384f88a3cf246ff3171e",
+    "private_evaluator.py": "4427adaf5caf23cf88f1cf81dc493959dce859ac6e030d36634939689276c8f1",
+    "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993"
+  }
+}

@@ -1,0 +1,3 @@
+﻿source_id,kind,evidence_tier,dataset_role,evaluated_split,clean_rows,noise_rows,path
+v2a_seed42_development,campaign_dev,development,laboratory,target_dev_only,32,0,D:\3800\experiments\20260925_channel_robust_v2a_screen_v5
+v4_frozen_reference_development,campaign_dev,development,laboratory,target_dev_only,32,0,D:\3800\experiments\20260925_channel_robust_screen_v4

@@ -1,0 +1,34 @@
+{
+  "schema": "cra_v2_paper_report_manifest_v1",
+  "report_title": "CRA-v2A-U-fixedK development system-evaluation report",
+  "comparisons": [
+    {
+      "name": "paired_causal",
+      "candidate": "channel_robust_alignment_v2a",
+      "control": "common_anchor_control"
+    },
+    {
+      "name": "frozen_v4_reference",
+      "candidate": "channel_robust_alignment_v2a",
+      "control": "matched_control"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "v2a_seed42_development",
+      "kind": "campaign_dev",
+      "evidence_tier": "development",
+      "dataset_role": "laboratory",
+      "path": "../experiments/20260925_channel_robust_v2a_screen_v5",
+      "audit_path": "../audit/channel_robust_v2a_screen_v5_completed_audit_20260925.json"
+    },
+    {
+      "source_id": "v4_frozen_reference_development",
+      "kind": "campaign_dev",
+      "evidence_tier": "development",
+      "dataset_role": "laboratory",
+      "path": "../experiments/20260925_channel_robust_screen_v4",
+      "audit_path": "../audit/channel_robust_screen_v4_completed_audit_20260925.json"
+    }
+  ]
+}

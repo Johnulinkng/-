@@ -1,0 +1,5128 @@
+{
+  "anchors": [
+    {
+      "anchor": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "seed": 42,
+        "id": "WP-S0_source012_common_anchor_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_common_anchor_seed42_cuda",
+      "run_id": "WP-S0_source012_common_anchor_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_common_anchor_seed42_cuda/best_model.pth",
+      "checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "selected_epoch": 36,
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": null
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0004605394556031873
+      },
+      "optimizer_steps": 2760,
+      "anchor_replay_identity": {
+        "model_state_sha256": "bb70377309c6442af777a288896b8b05a5a3815271ab98a10354c724039a6f0a",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "3d7b8f3c5e81e746ddb26cdd74bb756872012aef2dc2d3e5ae699fb81d6844ab",
+        "kernel_contract_sha256": "c7fe7a73b84d6e1f35ae7153841a5d9d6440a94f711327a7a05642f322b224e7"
+      },
+      "kernel_contract": {
+        "kind": "source_anchor_fixed_five_rbf",
+        "pool_seed": 30042,
+        "pool_size": 256,
+        "pool_local_indices_sha256": "6b543df7dc6edb01d08bcf62a3d568bf288d35a3ccd0f0e75435e7dbd0122442",
+        "multipliers": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "kernel_weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fused": {
+          "median_squared_distance": 156.3238067626953,
+          "bandwidths": [
+            39.08095169067383,
+            78.16190338134766,
+            156.3238067626953,
+            312.6476135253906,
+            625.2952270507812
+          ]
+        },
+        "channel": {
+          "median_squared_distance": 164.69338989257812,
+          "bandwidths": [
+            41.17334747314453,
+            82.34669494628906,
+            164.69338989257812,
+            329.38677978515625,
+            658.7735595703125
+          ]
+        },
+        "source_feature_pool_sha256": "a42bb58114dd6c8b2d5a5c3e9ae293a5d60931701b8431c28cd810cce754cf8a",
+        "target_inputs_used": false,
+        "fixed_before_branch_training": true
+      },
+      "training_seconds": 51.897539677999994
+    },
+    {
+      "anchor": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "seed": 42,
+        "id": "WP-D1_source012_common_anchor_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_common_anchor_seed42_cuda",
+      "run_id": "WP-D1_source012_common_anchor_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_common_anchor_seed42_cuda/best_model.pth",
+      "checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "selected_epoch": 56,
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": null
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0003660653617310648
+      },
+      "optimizer_steps": 2760,
+      "anchor_replay_identity": {
+        "model_state_sha256": "06777bc6f8737d02a42a2f9e30618cddf91a47d38a7370dc9e2e895f03654f57",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "8fb1b591050a1c59c824a1b758aff8ce5b6554617d304c55879ae736aa40446c",
+        "kernel_contract_sha256": "cb4309548d4f2789e714db30023a2273ff71874124492d0d33dafaa8e487dcd4"
+      },
+      "kernel_contract": {
+        "kind": "source_anchor_fixed_five_rbf",
+        "pool_seed": 30042,
+        "pool_size": 256,
+        "pool_local_indices_sha256": "6b543df7dc6edb01d08bcf62a3d568bf288d35a3ccd0f0e75435e7dbd0122442",
+        "multipliers": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "kernel_weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fused": {
+          "median_squared_distance": 110.85034942626953,
+          "bandwidths": [
+            27.712587356567383,
+            55.425174713134766,
+            110.85034942626953,
+            221.70069885253906,
+            443.4013977050781
+          ]
+        },
+        "channel": {
+          "median_squared_distance": 111.5910873413086,
+          "bandwidths": [
+            27.89777183532715,
+            55.7955436706543,
+            111.5910873413086,
+            223.1821746826172,
+            446.3643493652344
+          ]
+        },
+        "source_feature_pool_sha256": "c3487c99eceafb42df1e995fa3e8e87d87e1a8c823767b254885363a193b0d15",
+        "target_inputs_used": false,
+        "fixed_before_branch_training": true
+      },
+      "training_seconds": 48.792401426999994
+    },
+    {
+      "anchor": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "seed": 42,
+        "id": "PG-S1_source012_common_anchor_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_common_anchor_seed42_cuda",
+      "run_id": "PG-S1_source012_common_anchor_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_common_anchor_seed42_cuda/best_model.pth",
+      "checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "selected_epoch": 55,
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": null
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012054954981431366
+      },
+      "optimizer_steps": 480,
+      "anchor_replay_identity": {
+        "model_state_sha256": "62d56ce687349fdf2c1b3659ac70fcb592435e4444e4c28e8c961b50ef5b8a13",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "cecff3b1e177d504deb0ffb3593f1a5dd61d59b07489d267b644f582745c666b",
+        "kernel_contract_sha256": "034d446a18b40838b99b17c50cc94a5b52129459fa8295d8ae7acbf280dd7229"
+      },
+      "kernel_contract": {
+        "kind": "source_anchor_fixed_five_rbf",
+        "pool_seed": 30042,
+        "pool_size": 256,
+        "pool_local_indices_sha256": "b465cc4a14a1a9682404400cf81a1fe106107860b50b6ad1180ef470d4a3d2c1",
+        "multipliers": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "kernel_weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fused": {
+          "median_squared_distance": 218.4933624267578,
+          "bandwidths": [
+            54.62334060668945,
+            109.2466812133789,
+            218.4933624267578,
+            436.9867248535156,
+            873.9734497070312
+          ]
+        },
+        "channel": {
+          "median_squared_distance": 234.10638427734375,
+          "bandwidths": [
+            58.52659606933594,
+            117.05319213867188,
+            234.10638427734375,
+            468.2127685546875,
+            936.425537109375
+          ]
+        },
+        "source_feature_pool_sha256": "9b1c735297e7d33c3975d2cf0c46fc076c7070162cd1529ca2a16717f8d9752f",
+        "target_inputs_used": false,
+        "fixed_before_branch_training": true
+      },
+      "training_seconds": 8.164960433000005
+    },
+    {
+      "anchor": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "seed": 42,
+        "id": "PG-D1_source012_common_anchor_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_common_anchor_seed42_cuda",
+      "run_id": "PG-D1_source012_common_anchor_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_common_anchor_seed42_cuda/best_model.pth",
+      "checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "selected_epoch": 59,
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": null
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0015814822819083928
+      },
+      "optimizer_steps": 480,
+      "anchor_replay_identity": {
+        "model_state_sha256": "351a4ff82c34c7ecf7d2b10554929b20de72b66340d74a475f0d6b4e3f341da5",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "d25f2a126252089109c91219b04dd70581cebe00d2f2131dffe5bcaa2da5edd9",
+        "kernel_contract_sha256": "5e249fb0d143bb5a4c8f81abd3fdd97805db3ffe92ceac11a9240219c32b3253"
+      },
+      "kernel_contract": {
+        "kind": "source_anchor_fixed_five_rbf",
+        "pool_seed": 30042,
+        "pool_size": 256,
+        "pool_local_indices_sha256": "b465cc4a14a1a9682404400cf81a1fe106107860b50b6ad1180ef470d4a3d2c1",
+        "multipliers": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "kernel_weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fused": {
+          "median_squared_distance": 186.670166015625,
+          "bandwidths": [
+            46.66754150390625,
+            93.3350830078125,
+            186.670166015625,
+            373.34033203125,
+            746.6806640625
+          ]
+        },
+        "channel": {
+          "median_squared_distance": 193.451171875,
+          "bandwidths": [
+            48.36279296875,
+            96.7255859375,
+            193.451171875,
+            386.90234375,
+            773.8046875
+          ]
+        },
+        "source_feature_pool_sha256": "cfd99196eda476b6536d0c65a82f3a06f2f7d605e6c8aa61864b360e19d109c8",
+        "target_inputs_used": false,
+        "fixed_before_branch_training": true
+      },
+      "training_seconds": 8.474065011999983
+    }
+  ],
+  "arms": [
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-S0_target_all3_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_all3_common_anchor_control_seed42_cuda",
+      "run_id": "WP-S0_source012_target_all3_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_all3_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "b73289b46127e5152850fbb4df0c502abfdd7afa7230eea0968cbfa50fea101c",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005070874576146404
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "3bb62c0e8e284fc941fcd3ef142c5c81942d3b1de2a977e0ce3530b8ee57c0f3",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "d3a9bb58f14b7484f5fe62e00e651c6efda8561c4cf7e622b978cf3341bc7eb3",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 16.532136473999998
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-S0_target_all3_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-S0_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "5cf4328481bd9db8a187e913e19ddffc589eb1576661d411b0cbe7b218453181",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005394446204494064
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 41,
+      "suppressed_alignment_steps": 879,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "3bb62c0e8e284fc941fcd3ef142c5c81942d3b1de2a977e0ce3530b8ee57c0f3",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "d3a9bb58f14b7484f5fe62e00e651c6efda8561c4cf7e622b978cf3341bc7eb3",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 30.773819906
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-S0_target_slot0_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "run_id": "WP-S0_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot0_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "89da75cd557f2c4e91caf73803b34ea837f3e9fda486fb99ec665e378274016f",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005070874576146404
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "24ea729146bf96cc05b12145669277b843f297b96dd3e8cc529179aed4df6167",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 15.580443492
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-S0_target_slot0_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-S0_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "d7479142b3836da0b840f3821f4d3e33af94563f47795911d1c8f210320f40b1",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005392798405373469
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 78,
+      "suppressed_alignment_steps": 842,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "24ea729146bf96cc05b12145669277b843f297b96dd3e8cc529179aed4df6167",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 32.18478970700002
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          1
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-S0_target_slot1_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "run_id": "WP-S0_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot1_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "b6460d92571e479de4e64abc2af56af330db9d78adfddd35d834d6755ae8e0fe",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005070874576146404
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "61150db808769a9cc6f373637603f80454eb329a0e73e3fa67161adf04fa9799",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 16.609063143000014
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          1
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-S0_target_slot1_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-S0_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "56e38ff5c518c011a8dedd9ac3cf7f7ea8d73e0d7f6b00c1bedf7aa2fe52cd21",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005672544715538
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 67,
+      "suppressed_alignment_steps": 853,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "61150db808769a9cc6f373637603f80454eb329a0e73e3fa67161adf04fa9799",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 30.417631719000042
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-S0_target_slot2_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "run_id": "WP-S0_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot2_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "94e38f1b46f9faca9d87b871d0bf37de900cce6137139c0b1ec3ee174bb1b625",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0005070874576146404
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "dc0a2aa5e7616c95b730c72ac8365c08f494b6468ad0b5877fcbb2be565de6f0",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 15.714078872000016
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-S0_target_slot2_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-S0_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-S0_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-S0",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "c0cdabe30a9e9e2550cba8e10337f9a7299cf0b214a0a7e0cdda32a154d56c04",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.00054630066435008
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 91,
+      "suppressed_alignment_steps": 829,
+      "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281",
+      "branch_start_identity": {
+        "model_state_sha256": "dc0a2aa5e7616c95b730c72ac8365c08f494b6468ad0b5877fcbb2be565de6f0",
+        "optimizer_state_sha256": "a650cb1c280066b8adc13b14e42708f1264cdb86ee48fb0842aac7170f54afde",
+        "scheduler_state_sha256": "3e52ab9dbcf02f6af1f9a451c3272b003390c9fef164c1ad86a665ee6cb41316",
+        "rng_state_sha256": "4c3dbe8b1f922e147badb7a6720fdd5c43da00e4cf39af827c5c785f0af2c14e",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "4b84f37afe9f7189b90cd1396051cadce4b677856cb04f88b2d54831ecbf9281"
+      },
+      "branch_source_indices_sha256": "643874a1e12560bbb14c0fafa3740905e316812e390296862b0b0fbef759a9c5",
+      "branch_source_masks_sha256": "2a166a25781da3aa7c895f6c8ca3ed1c90beeca9eb4b54511a2a6c29f82ccbdb",
+      "training_seconds": 29.413006584000016
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-D1_target_all3_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_all3_common_anchor_control_seed42_cuda",
+      "run_id": "WP-D1_source012_target_all3_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_all3_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "8c826ed360279ecd06b06143b74babf39ff60d754d757723c3119f326db8a806",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.00032598419072261704
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "99a39c009992a333f65f7b4c42931212dc9dc3d6ba0e461ff510cfaeab847d5f",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "4a19a8a98e6ebaf125d02a19cc6ee0ab1debbd597578e2811c067af0fef626ab",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 15.528445158000011
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-D1_target_all3_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-D1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "a012924ada785dff4070f4c58a65271809fe05cdae7d4ec7c73934702e15dbde",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0003910016321266691
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 18,
+      "suppressed_alignment_steps": 902,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "99a39c009992a333f65f7b4c42931212dc9dc3d6ba0e461ff510cfaeab847d5f",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "4a19a8a98e6ebaf125d02a19cc6ee0ab1debbd597578e2811c067af0fef626ab",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 32.164516142000025
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-D1_target_slot0_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "run_id": "WP-D1_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot0_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "4a45480f1ce30a6a7468d9dbdcc9b0df7cf3c384f849fc80bb05db8c0207e8e3",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.00032598419072261704
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "5c8cbb7beb56297a8b3fb0c289fbd875b95377612f176fe6b8e3527759bf934c",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 15.209236496000017
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-D1_target_slot0_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "f66182d936beef525d35e1e48968128945525228189818b2ee46c8e8ba56ff92",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.0003996280205513661
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 34,
+      "suppressed_alignment_steps": 886,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "5c8cbb7beb56297a8b3fb0c289fbd875b95377612f176fe6b8e3527759bf934c",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 31.18461617199995
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          1
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-D1_target_slot1_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "run_id": "WP-D1_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot1_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "fc211fd6e21b8000ff7944a75577cd8e8091b97e29574e8983d945865a61f8ba",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.00032598419072261704
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "a659cf8d3fa545c66c884dcb39f92f4137e18465e9590c4860e0465137afa940",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 18.345100091999996
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          1
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-D1_target_slot1_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-D1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "6b206ae6f9ebaff53a5111e41f0e5cd295d9f68fe4a64ec186c0195dfe108356",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.000366922348854132
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 32,
+      "suppressed_alignment_steps": 888,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "a659cf8d3fa545c66c884dcb39f92f4137e18465e9590c4860e0465137afa940",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 31.189502208999954
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "WP-D1_target_slot2_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "run_id": "WP-D1_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot2_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "3c86d0e9f88864ec15043a6557edaef00adaedfded641dc9a65a3e9aed2b9822",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.00032598419072261704
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "733e22f7749cf5f42fc61e6e5523c857c04124481f045187224927912273c83b",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 17.656739227999992
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "WP-D1_target_slot2_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "WP-D1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/WP-D1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "WP-D1",
+      "dataset": "waterpump",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "a61d771d501a00e3cddebee8868eda52ec678697f8eb319b79fa99ed7aed2930",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          150,
+          150,
+          150,
+          150,
+          150
+        ],
+        "confusion_matrix": [
+          [
+            150,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            150,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            150,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            150
+          ]
+        ],
+        "loss": 0.00037378644139971585
+      },
+      "optimizer_steps": 920,
+      "alignment_steps": 920,
+      "applied_alignment_steps": 24,
+      "suppressed_alignment_steps": 896,
+      "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+      "branch_start_identity": {
+        "model_state_sha256": "733e22f7749cf5f42fc61e6e5523c857c04124481f045187224927912273c83b",
+        "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+        "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+        "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+      },
+      "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+      "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+      "training_seconds": 27.742880589000038
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-S1_target_all3_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_all3_common_anchor_control_seed42_cuda",
+      "run_id": "PG-S1_source012_target_all3_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_all3_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "0bf4a7cde3cd48866665e06d34ae44f241009e3dae99a3b9523657632264a6d2",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0009730751218739897
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "421a90cdd0537c33016d3326572e11cb37ec7633ed068cdcc41c8389c74a1140",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "2d5f3db73c65e532d9f6cbec80e880bb7b467fca1f59c604cc1df2f85bc445d5",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 2.8410314799999696
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-S1_target_all3_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-S1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "b73d0c481730ebfd13859b33f5e9c50c2c253f5e10b614d37eb483e3d78001b3",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.001041248943656683
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 16,
+      "suppressed_alignment_steps": 144,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "421a90cdd0537c33016d3326572e11cb37ec7633ed068cdcc41c8389c74a1140",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "2d5f3db73c65e532d9f6cbec80e880bb7b467fca1f59c604cc1df2f85bc445d5",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 5.159304302999999
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-S1_target_slot0_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "run_id": "PG-S1_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot0_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "a4abbe82bb897f64ce8751303b83de556781f9174b27bf673d5445a9da6991dd",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0009730751218739897
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "13fc09565b7758ed23235f7c6c27fd7e70a8541a0c290006fe7f66cc27694b94",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "e0e1283cfd5899223b00e51289a0161ce1a9cba51942b5dc0edbbf52ae4f7715",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 2.95360219600002
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-S1_target_slot0_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-S1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "ca93bbcbefcc66bbd3b2a7cfd9410e9d3c7a485ed644bca95a69625c346c8540",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0010438940417952835
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 34,
+      "suppressed_alignment_steps": 126,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "13fc09565b7758ed23235f7c6c27fd7e70a8541a0c290006fe7f66cc27694b94",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "e0e1283cfd5899223b00e51289a0161ce1a9cba51942b5dc0edbbf52ae4f7715",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 5.185074103000034
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          1
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-S1_target_slot1_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "run_id": "PG-S1_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot1_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "26defd05aacd17f94a38c2016f26b517d2d625f3423e5cada340865b12219d5c",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0009730751218739897
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "944efbddba51fc4d13aa1fbfb2117231ea935fb4c38f92d5046575baf8c5a4dc",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "e0e1283cfd5899223b00e51289a0161ce1a9cba51942b5dc0edbbf52ae4f7715",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 2.809562647000007
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          1
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-S1_target_slot1_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-S1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "d5c7722fde35d62ecf4c3b70ef184f096abf52d4e8267aa931a45ed9bfbdf908",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0010809303261339665
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 23,
+      "suppressed_alignment_steps": 137,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "944efbddba51fc4d13aa1fbfb2117231ea935fb4c38f92d5046575baf8c5a4dc",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "e0e1283cfd5899223b00e51289a0161ce1a9cba51942b5dc0edbbf52ae4f7715",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 5.166503127999931
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-S1_target_slot2_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "run_id": "PG-S1_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot2_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "c39a79c6c98560dab29dc69bd97a79a14c556351a553c5d8ee1f9c9fcace1e48",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0009730751218739897
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "43fe96ef7f5c2392f69aadf73f93eaa1839adc841cdab841e286e57ce6acdcec",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "e0e1283cfd5899223b00e51289a0161ce1a9cba51942b5dc0edbbf52ae4f7715",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 2.8012837520000176
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-S1_target_slot2_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-S1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-S1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-S1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "a96e7ae850762cdcc1de824e100a07fe1cdd19379525503959ccd4bf5f328c6d",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0010053805308416486
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 22,
+      "suppressed_alignment_steps": 138,
+      "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+      "branch_start_identity": {
+        "model_state_sha256": "43fe96ef7f5c2392f69aadf73f93eaa1839adc841cdab841e286e57ce6acdcec",
+        "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+        "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+        "rng_state_sha256": "e0e1283cfd5899223b00e51289a0161ce1a9cba51942b5dc0edbbf52ae4f7715",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+      },
+      "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+      "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+      "training_seconds": 4.608521212000028
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-D1_target_all3_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_all3_common_anchor_control_seed42_cuda",
+      "run_id": "PG-D1_source012_target_all3_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_all3_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "2082038a88db077cadc73180b43d3e39527a494468d656c86e9c3d327d4b0714",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012746731867082418
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "c8e2e62200406c66955fbaa6db7179e9bd74f044aa6ecaf5c4d48f6d8a3d92b7",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "8ea03b6a91e25593ee9f8ce664bad64c49a2c1c99c3d92ee19d9f03a81b5bdc6",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 2.7066011299999673
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-D1_target_all3_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-D1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0,
+          1,
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "d65c73c3005b60c1024a29661fd4e18d307639f62f07dbe89991cf3af632a715",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012770757358521222
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 5,
+      "suppressed_alignment_steps": 155,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "c8e2e62200406c66955fbaa6db7179e9bd74f044aa6ecaf5c4d48f6d8a3d92b7",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "8ea03b6a91e25593ee9f8ce664bad64c49a2c1c99c3d92ee19d9f03a81b5bdc6",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 5.170622541999933
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-D1_target_slot0_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "run_id": "PG-D1_source012_target_slot0_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot0_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "21f99560b2d0787736b7739742a3f3359a5c72a7a6fd85289b9ddc0f4cdb054c",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012746731867082418
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "0ebe0c034b5a3a78d06e79c21b7de04cadf44d7035dca5be8b5c215290ef9929",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 2.724379175000081
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-D1_target_slot0_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          0
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "36cff7f6a7f2eeb31692f73dee43c3f79fc5f7fe707f280e29d6ac2a7598ce8c",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0013022848265245557
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 5,
+      "suppressed_alignment_steps": 155,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "0ebe0c034b5a3a78d06e79c21b7de04cadf44d7035dca5be8b5c215290ef9929",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            0
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 4.699596326999995
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          1
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-D1_target_slot1_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "run_id": "PG-D1_source012_target_slot1_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot1_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "44e349b02461b520187aba2ba4901729fea78286355a91d87ca210ed5b210540",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012746731867082418
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "e80c7abb13e8124d64836027c97290b96239b5ce586f4de85731fa26cc2d3c8d",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 2.6621132249999846
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          1
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-D1_target_slot1_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-D1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot1_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          1
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "2d7a50b44bbe7feffd2220c76cc7ced7b16a1801ae1ad5b41215675b39f43c1e",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012984793912619351
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 7,
+      "suppressed_alignment_steps": 153,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "e80c7abb13e8124d64836027c97290b96239b5ce586f4de85731fa26cc2d3c8d",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            1
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 5.945275960999993
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          2
+        ],
+        "variant": "common_anchor_control",
+        "seed": 42,
+        "id": "PG-D1_target_slot2_common_anchor_control_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "run_id": "PG-D1_source012_target_slot2_common_anchor_control_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot2_common_anchor_control_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "080050c9d6c0d14796a84c8883b10d35fe9c9371213854c8c8b90d20717d2706",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012746731867082418
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 0,
+      "applied_alignment_steps": 0,
+      "suppressed_alignment_steps": 0,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "3e7f6bf1e7cc97dbec2a06020e738bf4fca2db414c1b9a6ccac1e108784460fb",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 3.415248156000075
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          2
+        ],
+        "variant": "channel_robust_alignment_v2a",
+        "seed": 42,
+        "id": "PG-D1_target_slot2_channel_robust_alignment_v2a_seed42"
+      },
+      "run": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "run_id": "PG-D1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda",
+      "checkpoint": "/mnt/d/3800/experiments/20260925_channel_robust_v2a_screen_v5/runs/PG-D1_source012_target_slot2_channel_robust_alignment_v2a_seed42_cuda/best_model.pth",
+      "task_id": "PG-D1",
+      "dataset": "gearbox",
+      "channels": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          2
+        ]
+      },
+      "seed": 42,
+      "mask_seed": 424284,
+      "source_draw_seed": 525294,
+      "target_draw_seed": 626304,
+      "code_sha256": {
+        "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+        "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+        "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+        "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+        "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+        "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+        "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+        "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+      },
+      "checkpoint_sha256": "71e8c781618add15c6d8d29948c64f4bf3866f9d477380202b54bfb9ab28979a",
+      "selected_epoch": 19,
+      "source_val": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "per_class_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "loss": 0.0012698134826496243
+      },
+      "optimizer_steps": 160,
+      "alignment_steps": 160,
+      "applied_alignment_steps": 6,
+      "suppressed_alignment_steps": 154,
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+      "branch_start_identity": {
+        "model_state_sha256": "3e7f6bf1e7cc97dbec2a06020e738bf4fca2db414c1b9a6ccac1e108784460fb",
+        "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+        "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+        "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+        "source_slot_cycle": {
+          "physical_slots": [
+            0,
+            1,
+            2
+          ],
+          "initial_cursor": 1,
+          "cursor": 1,
+          "rows_drawn": 0
+        },
+        "target_slot_cycle": {
+          "physical_slots": [
+            2
+          ],
+          "initial_cursor": 0,
+          "cursor": 0,
+          "rows_drawn": 0
+        },
+        "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+      },
+      "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+      "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+      "training_seconds": 5.731032476999985
+    }
+  ]
+}

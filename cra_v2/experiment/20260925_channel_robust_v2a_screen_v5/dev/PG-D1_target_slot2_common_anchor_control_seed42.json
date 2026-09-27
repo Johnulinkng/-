@@ -1,0 +1,172 @@
+{
+  "receipt": {
+    "task_id": "PG-D1",
+    "plan_sha256": "a789b078fc4b9267cccf52adef14752b0a6d9988b98014d43fe49a9300867534",
+    "task_manifest_sha256": "044a8fa373ab049eadcbb2568c3605f8e9ee6e7772e2afe00c3c79bda57181a4",
+    "private_audit_sha256": "851cd49316b42357691b366e59622d757c2cbd3bd072e63e082c297edc38b534",
+    "full_public_bank_sha_verified": true,
+    "private_origin_embargo_verified": true,
+    "final_signal_or_label_rows_decoded": false
+  },
+  "checkpoint_sha256": "080050c9d6c0d14796a84c8883b10d35fe9c9371213854c8c8b90d20717d2706",
+  "evaluated_split": "target_dev_only",
+  "n_samples": 100,
+  "accuracy": 0.72,
+  "macro_f1": 0.7131212950296397,
+  "per_class_recall": [
+    0.32,
+    1.0,
+    0.56,
+    1.0
+  ],
+  "confusion_matrix": [
+    [
+      8,
+      0,
+      17,
+      0
+    ],
+    [
+      0,
+      25,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      14,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      25
+    ]
+  ],
+  "support_per_class": [
+    25,
+    25,
+    25,
+    25
+  ],
+  "checkpoint_identity": {
+    "run_id": "PG-D1_source012_target_slot2_common_anchor_control_seed42_cuda",
+    "task_id": "PG-D1",
+    "dataset": "gearbox",
+    "channels": {
+      "source": [
+        0,
+        1,
+        2
+      ],
+      "target": [
+        2
+      ]
+    },
+    "variant": "common_anchor_control",
+    "selected_epoch": 19,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0012746731867082418
+    },
+    "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3",
+    "branch_start_identity": {
+      "model_state_sha256": "3e7f6bf1e7cc97dbec2a06020e738bf4fca2db414c1b9a6ccac1e108784460fb",
+      "optimizer_state_sha256": "dd3a80d718787e16361cebba3f6ca11e1cb768bcfd665d8ea006b101dae91061",
+      "scheduler_state_sha256": "0e90cc4ea906566c53e366ea0ff4a6db8bc354fe4ca5ca2df286359499730105",
+      "rng_state_sha256": "c77949f585bfd6aef8e7fd2b118b340247ebeaa2c1ed2bdd013bb0b800547c2f",
+      "source_slot_cycle": {
+        "physical_slots": [
+          0,
+          1,
+          2
+        ],
+        "initial_cursor": 1,
+        "cursor": 1,
+        "rows_drawn": 0
+      },
+      "target_slot_cycle": {
+        "physical_slots": [
+          2
+        ],
+        "initial_cursor": 0,
+        "cursor": 0,
+        "rows_drawn": 0
+      },
+      "anchor_checkpoint_sha256": "95ebc0fb2271c7ed7b7b8f5b5012b10d3d5894dd3ffc5e1e023d2c5009ccdec3"
+    },
+    "branch_source_indices_sha256": "8f3b102f33a0e436ebbf8ca4df67cb060c4767479bafb2821acdd01a25be7be3",
+    "branch_source_masks_sha256": "67c754e77c35ed7f721d9e3fe32f4321e6488a36ab9e5fe5af4795af738d6326",
+    "public_manifest_sha256": "044a8fa373ab049eadcbb2568c3605f8e9ee6e7772e2afe00c3c79bda57181a4",
+    "public_plan_sha256": "a789b078fc4b9267cccf52adef14752b0a6d9988b98014d43fe49a9300867534",
+    "code_sha256": {
+      "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+      "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+      "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+      "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+      "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+      "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+      "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+      "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+    }
+  },
+  "target_final_evaluated": false,
+  "evaluation_code_sha256": {
+    "evaluate_channel_robust_alignment_v2_dev.py": "4cc0eed877a23d62b91ddfb0616e2d8c6836e509a037384f88a3cf246ff3171e",
+    "private_evaluator.py": "4427adaf5caf23cf88f1cf81dc493959dce859ac6e030d36634939689276c8f1",
+    "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993"
+  }
+}

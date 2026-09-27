@@ -1,0 +1,1986 @@
+[
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_all3_matched_control_seed42"
+    },
+    "result_sha256": "d232b53067bb5ac2fecef42459fc5bcd0c48f92925425d6cdec55a568298bb29",
+    "checkpoint_sha256": "52d443ef962096a75903c18b93fb50335c0eeebc4e8a4440c24d3c0abc54ee45",
+    "accuracy": 0.6893333333333334,
+    "macro_f1": 0.6712592379167746,
+    "per_class_recall": [
+      0.6133333333333333,
+      0.8,
+      0.22,
+      0.8133333333333334,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        92,
+        13,
+        40,
+        4,
+        1
+      ],
+      [
+        4,
+        120,
+        4,
+        5,
+        17
+      ],
+      [
+        15,
+        68,
+        33,
+        25,
+        9
+      ],
+      [
+        1,
+        1,
+        24,
+        122,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "ad035d425cf4d6ce4b37a533cddeac03cec3d0fdb1f52c65c1d488ede2245b17",
+    "checkpoint_sha256": "bec9208b07b1930b36c7614f5a8bf815dbafe0b7291e8842d42582b84438cc27",
+    "accuracy": 0.6226666666666667,
+    "macro_f1": 0.6014822267419315,
+    "per_class_recall": [
+      0.4533333333333333,
+      0.7666666666666667,
+      0.16,
+      0.7333333333333333,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        68,
+        23,
+        52,
+        4,
+        3
+      ],
+      [
+        2,
+        115,
+        7,
+        7,
+        19
+      ],
+      [
+        12,
+        61,
+        24,
+        37,
+        16
+      ],
+      [
+        4,
+        2,
+        31,
+        110,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot0_matched_control_seed42"
+    },
+    "result_sha256": "ee2f35c12bfa35b519247c51827fe97bf2fc7978b62ddf8cc960c9598a932172",
+    "checkpoint_sha256": "d164e7e8f7659824ed91b4e8fcbaa1b9ee744635194a72105a261857a43bf701",
+    "accuracy": 0.6506666666666666,
+    "macro_f1": 0.6378145833593314,
+    "per_class_recall": [
+      0.38,
+      0.6133333333333333,
+      0.46,
+      0.8133333333333334,
+      0.9866666666666667
+    ],
+    "confusion_matrix": [
+      [
+        57,
+        29,
+        46,
+        13,
+        5
+      ],
+      [
+        9,
+        92,
+        15,
+        16,
+        18
+      ],
+      [
+        20,
+        43,
+        69,
+        9,
+        9
+      ],
+      [
+        10,
+        0,
+        15,
+        122,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        148
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "5d2ae3c3084c5afeca8caa059f9ed2127d9a6d11463d0f9da1095593b82a458f",
+    "checkpoint_sha256": "bb7e920145c5dc1c55809801e0a5a0c7a3ebb33e2aa60e4cfa4e2e2010c8f6de",
+    "accuracy": 0.6186666666666667,
+    "macro_f1": 0.5956881091628723,
+    "per_class_recall": [
+      0.26666666666666666,
+      0.6466666666666666,
+      0.38666666666666666,
+      0.7933333333333333,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        32,
+        47,
+        23,
+        8
+      ],
+      [
+        5,
+        97,
+        13,
+        14,
+        21
+      ],
+      [
+        43,
+        16,
+        58,
+        22,
+        11
+      ],
+      [
+        5,
+        5,
+        15,
+        119,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot1_matched_control_seed42"
+    },
+    "result_sha256": "0d2261551505c498176b4b66e3f2e65cb25a9e415f7845f8d416cb0c33a43a60",
+    "checkpoint_sha256": "8436c18a532ef9b4550a68b1832efe2d4b531aaf6701712ac77e55d9750b6706",
+    "accuracy": 0.5866666666666667,
+    "macro_f1": 0.5703633806721309,
+    "per_class_recall": [
+      0.7733333333333333,
+      0.7466666666666667,
+      0.08,
+      0.3466666666666667,
+      0.9866666666666667
+    ],
+    "confusion_matrix": [
+      [
+        116,
+        2,
+        32,
+        0,
+        0
+      ],
+      [
+        6,
+        112,
+        1,
+        21,
+        10
+      ],
+      [
+        31,
+        25,
+        12,
+        66,
+        16
+      ],
+      [
+        8,
+        6,
+        79,
+        52,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        148
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "386ea44ba9b92a85748167776ed727c668afce8ae8958d45169ef309fc7dae19",
+    "checkpoint_sha256": "59b11f13245cc0db7c96bb92183bf664cbe32cd69ac99b5992085f72fdf7d7fa",
+    "accuracy": 0.48933333333333334,
+    "macro_f1": 0.48091165318005763,
+    "per_class_recall": [
+      0.52,
+      0.6866666666666666,
+      0.013333333333333334,
+      0.24666666666666667,
+      0.98
+    ],
+    "confusion_matrix": [
+      [
+        78,
+        24,
+        48,
+        0,
+        0
+      ],
+      [
+        1,
+        103,
+        3,
+        35,
+        8
+      ],
+      [
+        9,
+        23,
+        2,
+        87,
+        29
+      ],
+      [
+        14,
+        2,
+        87,
+        37,
+        10
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        147
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot2_matched_control_seed42"
+    },
+    "result_sha256": "e21bad3ea4b29969f42d54a3279a577b610de5533d839782e1ea08dc3d63025d",
+    "checkpoint_sha256": "01bd1d4b9b50a893bdef319b742684f376cf199c26a4521354fd04a114eaf451",
+    "accuracy": 0.624,
+    "macro_f1": 0.603960375244009,
+    "per_class_recall": [
+      0.6933333333333334,
+      0.46,
+      0.10666666666666667,
+      0.8666666666666667,
+      0.9933333333333333
+    ],
+    "confusion_matrix": [
+      [
+        104,
+        12,
+        30,
+        4,
+        0
+      ],
+      [
+        21,
+        69,
+        42,
+        7,
+        11
+      ],
+      [
+        6,
+        89,
+        16,
+        24,
+        15
+      ],
+      [
+        2,
+        5,
+        9,
+        130,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        149
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "84b971b847138a54cea389e42baf44fe516daa80d542bebdd95541e50cd859b2",
+    "checkpoint_sha256": "23632332d87679e465312985123cabe4023e290b4da4c3e753a07dc77a4a6828",
+    "accuracy": 0.6413333333333333,
+    "macro_f1": 0.6130043587969595,
+    "per_class_recall": [
+      0.6533333333333333,
+      0.6533333333333333,
+      0.1,
+      0.8,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        98,
+        18,
+        29,
+        5,
+        0
+      ],
+      [
+        7,
+        98,
+        22,
+        10,
+        13
+      ],
+      [
+        10,
+        66,
+        15,
+        38,
+        21
+      ],
+      [
+        1,
+        17,
+        9,
+        120,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_all3_matched_control_seed42"
+    },
+    "result_sha256": "ddbe68c8a173893f12c699c59c2845a72883fc001ccf584ab0f7200eb34503b4",
+    "checkpoint_sha256": "1eab7c714713b4321cb236207d0da3ff00372f9ccda31a74254a7ef19d381c87",
+    "accuracy": 0.38666666666666666,
+    "macro_f1": 0.34290244517432644,
+    "per_class_recall": [
+      0.04666666666666667,
+      0.2,
+      0.0,
+      0.7666666666666667,
+      0.92
+    ],
+    "confusion_matrix": [
+      [
+        7,
+        57,
+        81,
+        5,
+        0
+      ],
+      [
+        56,
+        30,
+        18,
+        5,
+        41
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ],
+      [
+        0,
+        17,
+        18,
+        115,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0,
+        138
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "73ad68926a044f34e60b34fdf367be3ff3980f28902c68adaca23d1ddffec0de",
+    "checkpoint_sha256": "8cb69614d0fe87548a27c82796ca8976ae898716253e3b08030b5e208a74dcd2",
+    "accuracy": 0.30533333333333335,
+    "macro_f1": 0.2869882090025183,
+    "per_class_recall": [
+      0.0,
+      0.31333333333333335,
+      0.0,
+      0.9133333333333333,
+      0.3
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        70,
+        66,
+        14,
+        0
+      ],
+      [
+        15,
+        47,
+        20,
+        15,
+        53
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        148
+      ],
+      [
+        0,
+        8,
+        5,
+        137,
+        0
+      ],
+      [
+        43,
+        0,
+        62,
+        0,
+        45
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot0_matched_control_seed42"
+    },
+    "result_sha256": "6f6db4b4b5c82cdbef479f9ae6bcecb92f4f0341d189f353c6bd66932e52e87c",
+    "checkpoint_sha256": "2263663727059bad67b00704e3c99c08dc1499dbe46d127a1f75956428db9aee",
+    "accuracy": 0.444,
+    "macro_f1": 0.3913898460917356,
+    "per_class_recall": [
+      0.22,
+      0.1,
+      0.02666666666666667,
+      0.9533333333333334,
+      0.92
+    ],
+    "confusion_matrix": [
+      [
+        33,
+        63,
+        44,
+        10,
+        0
+      ],
+      [
+        19,
+        15,
+        53,
+        6,
+        57
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        146
+      ],
+      [
+        0,
+        6,
+        1,
+        143,
+        0
+      ],
+      [
+        11,
+        1,
+        0,
+        0,
+        138
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "c9b22e536cec054620d7804785a311de7a6d0c5308992aec87e3669fe5d506e6",
+    "checkpoint_sha256": "e3437fc5eeb77413a1881367fac239148b286ce48dfc61fb9220148a3bfa6a9f",
+    "accuracy": 0.424,
+    "macro_f1": 0.3548604100683435,
+    "per_class_recall": [
+      0.06666666666666667,
+      0.16,
+      0.013333333333333334,
+      0.96,
+      0.92
+    ],
+    "confusion_matrix": [
+      [
+        10,
+        83,
+        39,
+        18,
+        0
+      ],
+      [
+        12,
+        24,
+        51,
+        6,
+        57
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        147
+      ],
+      [
+        0,
+        5,
+        1,
+        144,
+        0
+      ],
+      [
+        11,
+        1,
+        0,
+        0,
+        138
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot1_matched_control_seed42"
+    },
+    "result_sha256": "db449a27a3dc93adc250e536360852b964e03befdd2828b902d15b207163cae2",
+    "checkpoint_sha256": "fbcf3a77109636029713bd2268be549c5fb6eebe63f147a693c1b21dff5ccaaf",
+    "accuracy": 0.268,
+    "macro_f1": 0.2955133400780957,
+    "per_class_recall": [
+      0.06666666666666667,
+      0.38666666666666666,
+      0.0,
+      0.4,
+      0.4866666666666667
+    ],
+    "confusion_matrix": [
+      [
+        10,
+        13,
+        110,
+        17,
+        0
+      ],
+      [
+        70,
+        58,
+        1,
+        2,
+        19
+      ],
+      [
+        18,
+        33,
+        0,
+        0,
+        99
+      ],
+      [
+        1,
+        4,
+        85,
+        60,
+        0
+      ],
+      [
+        0,
+        0,
+        75,
+        2,
+        73
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "28a79897f17de0fd885b55c3539e98f4d7b9ba11b764db111d76ff9a6b2112dc",
+    "checkpoint_sha256": "c1a2b70feda5697764129fb44bf93a9ca925fd601a802f69d7180abe9fd6afa4",
+    "accuracy": 0.22133333333333333,
+    "macro_f1": 0.2361779881813873,
+    "per_class_recall": [
+      0.006666666666666667,
+      0.43333333333333335,
+      0.0,
+      0.62,
+      0.04666666666666667
+    ],
+    "confusion_matrix": [
+      [
+        1,
+        25,
+        90,
+        34,
+        0
+      ],
+      [
+        37,
+        65,
+        1,
+        12,
+        35
+      ],
+      [
+        5,
+        23,
+        0,
+        0,
+        122
+      ],
+      [
+        0,
+        5,
+        52,
+        93,
+        0
+      ],
+      [
+        19,
+        1,
+        123,
+        0,
+        7
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot2_matched_control_seed42"
+    },
+    "result_sha256": "bc8844af4c610f71ac63e10d011d46c783d80c59246eb99d22d29cc2c35faeca",
+    "checkpoint_sha256": "0a9e9ae47c31233a06ce219910cdef4b665da14e10a8386c2f332fd1ee7ea1db",
+    "accuracy": 0.2733333333333333,
+    "macro_f1": 0.27533105131115987,
+    "per_class_recall": [
+      0.3,
+      0.11333333333333333,
+      0.013333333333333334,
+      0.35333333333333333,
+      0.5866666666666667
+    ],
+    "confusion_matrix": [
+      [
+        45,
+        24,
+        68,
+        12,
+        1
+      ],
+      [
+        50,
+        17,
+        35,
+        8,
+        40
+      ],
+      [
+        4,
+        4,
+        2,
+        1,
+        139
+      ],
+      [
+        1,
+        91,
+        5,
+        53,
+        0
+      ],
+      [
+        2,
+        0,
+        57,
+        3,
+        88
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "f1f323dc25d0dd19da6365f6a2191780682da68b8bec9fbdd63b92cc0e31751f",
+    "checkpoint_sha256": "52ad248462243a4d768d2b402b8dd2eab493d7b7954df13001b72b6aad5405f6",
+    "accuracy": 0.13066666666666665,
+    "macro_f1": 0.14567781840129265,
+    "per_class_recall": [
+      0.03333333333333333,
+      0.14,
+      0.0,
+      0.4533333333333333,
+      0.02666666666666667
+    ],
+    "confusion_matrix": [
+      [
+        5,
+        45,
+        75,
+        25,
+        0
+      ],
+      [
+        28,
+        21,
+        38,
+        14,
+        49
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        148
+      ],
+      [
+        0,
+        77,
+        5,
+        68,
+        0
+      ],
+      [
+        114,
+        0,
+        32,
+        0,
+        4
+      ]
+    ],
+    "support_per_class": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_all3_matched_control_seed42"
+    },
+    "result_sha256": "147890e868118a74d7e9b464e4d06b6c930594e5bb389073c3a72d5a8251bc55",
+    "checkpoint_sha256": "71ce9e96440cc1984093eecd3f1201981a35dfdf7d70d2be3616b1c9c0e36b78",
+    "accuracy": 0.42,
+    "macro_f1": 0.3570601851851852,
+    "per_class_recall": [
+      0.0,
+      0.88,
+      0.8,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        17,
+        8,
+        0
+      ],
+      [
+        0,
+        22,
+        0,
+        3
+      ],
+      [
+        5,
+        0,
+        20,
+        0
+      ],
+      [
+        24,
+        0,
+        1,
+        0
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "26ee9b47032e6eb8dbd3720523456c514980c5d55a04f3c12325af5d62865a9d",
+    "checkpoint_sha256": "3577aeba0d432aabbb94f562d5af60aa6f2b906c85d4a4044212ede4985af1c5",
+    "accuracy": 0.77,
+    "macro_f1": 0.7681512605042018,
+    "per_class_recall": [
+      0.56,
+      0.92,
+      0.64,
+      0.96
+    ],
+    "confusion_matrix": [
+      [
+        14,
+        2,
+        9,
+        0
+      ],
+      [
+        0,
+        23,
+        0,
+        2
+      ],
+      [
+        9,
+        0,
+        16,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        24
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot0_matched_control_seed42"
+    },
+    "result_sha256": "97ae51a906a0701d9721cfbf76029e56cefbd57dd4ea332e2d055fddb80ea94d",
+    "checkpoint_sha256": "f8f95b14845c6a15fda4eac0f48878f83555fe112fc086ad289aff5bb564a215",
+    "accuracy": 0.44,
+    "macro_f1": 0.3621621621621622,
+    "per_class_recall": [
+      0.0,
+      0.96,
+      0.8,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        20,
+        0
+      ],
+      [
+        20,
+        0,
+        5,
+        0
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "70096621b5e6d5cb788f56c71338d0d464b608dcc840016f9bc0a7237ccbc3a2",
+    "checkpoint_sha256": "874adf59336a080f08dcbb2ac28a4670c6628b489eae67f558169fc65fa2dd91",
+    "accuracy": 0.68,
+    "macro_f1": 0.6653186875801269,
+    "per_class_recall": [
+      0.24,
+      0.96,
+      0.8,
+      0.72
+    ],
+    "confusion_matrix": [
+      [
+        6,
+        18,
+        1,
+        0
+      ],
+      [
+        0,
+        24,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        20,
+        2
+      ],
+      [
+        7,
+        0,
+        0,
+        18
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot1_matched_control_seed42"
+    },
+    "result_sha256": "4add7d50f18556c49affbd608ed735df8c19f959c0602bd0930bd105521e9e6d",
+    "checkpoint_sha256": "48d9536842c5968a0b42d15267a80411702a9ac1b80bca743d28c6befcf1b55b",
+    "accuracy": 0.36,
+    "macro_f1": 0.30549932523616735,
+    "per_class_recall": [
+      0.0,
+      1.0,
+      0.44,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        9,
+        1,
+        11,
+        4
+      ],
+      [
+        22,
+        0,
+        3,
+        0
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "14a4a7c3021f1413b9e53acd856bf69f988836b9c94cf70d2e14d24e06236dde",
+    "checkpoint_sha256": "dbc60131a6323caec86bb79aa0a686215f59b958545d18177fc19991210c1479",
+    "accuracy": 0.48,
+    "macro_f1": 0.4631934704690665,
+    "per_class_recall": [
+      0.32,
+      1.0,
+      0.4,
+      0.2
+    ],
+    "confusion_matrix": [
+      [
+        8,
+        17,
+        0,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        12,
+        2,
+        10,
+        1
+      ],
+      [
+        19,
+        0,
+        1,
+        5
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot2_matched_control_seed42"
+    },
+    "result_sha256": "81dd2ab01f4930db620e19584578d71adc4b4b4fc13dda21ba523c5babb47f92",
+    "checkpoint_sha256": "a50f9b1bdf36afd3dedb01a61d7ac42480d79dfa280192ee0f39466bad8ea87f",
+    "accuracy": 0.18,
+    "macro_f1": 0.15697586726998491,
+    "per_class_recall": [
+      0.0,
+      0.12,
+      0.08,
+      0.52
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        22
+      ],
+      [
+        0,
+        23,
+        2,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        13
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "07e758829b7e61074c2892595fcf4e9557977d910ae7454de6b6e99cb0fb20b2",
+    "checkpoint_sha256": "adbd422473e810d3247bfee6557462dd8195f1643462fe21b4ced54ec7ccfa64",
+    "accuracy": 0.38,
+    "macro_f1": 0.36942865882605314,
+    "per_class_recall": [
+      0.04,
+      0.48,
+      0.16,
+      0.84
+    ],
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        13
+      ],
+      [
+        16,
+        5,
+        4,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        21
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_all3_matched_control_seed42"
+    },
+    "result_sha256": "e125692850b2998539fb86a5938c4833c7a4246324e6b2564f6f899d25150264",
+    "checkpoint_sha256": "04304e8dda04efc33c4c4c0dd5b0c2eae9b76a4648403d61fe70cce1b5b2c9a4",
+    "accuracy": 0.66,
+    "macro_f1": 0.5983907396950875,
+    "per_class_recall": [
+      0.0,
+      0.84,
+      0.8,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        21,
+        0,
+        4
+      ],
+      [
+        4,
+        0,
+        20,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "9fd70097a674a11e460062a246624f61f23266aeb801b8792b9bdb941f9cac63",
+    "checkpoint_sha256": "bd511ca0de371c4ae3ddf10d4bc6ead13c48b0ff187e44385fa0983a8ac7c00f",
+    "accuracy": 0.59,
+    "macro_f1": 0.5612287492410444,
+    "per_class_recall": [
+      0.0,
+      0.92,
+      0.44,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        23,
+        0,
+        2
+      ],
+      [
+        12,
+        0,
+        11,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot0_matched_control_seed42"
+    },
+    "result_sha256": "635af157dda5af9e82e79ca80613d5b0d0981fd19c1ee886e75c0f17ff061bf9",
+    "checkpoint_sha256": "db5deb3a966d1f2860d2105e73e91b1b4ddcf142c150d162a4a26b4f96129e3a",
+    "accuracy": 0.39,
+    "macro_f1": 0.3680263557154623,
+    "per_class_recall": [
+      0.0,
+      0.56,
+      0.12,
+      0.88
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        4,
+        21,
+        0
+      ],
+      [
+        5,
+        14,
+        2,
+        4
+      ],
+      [
+        14,
+        0,
+        3,
+        8
+      ],
+      [
+        0,
+        3,
+        0,
+        22
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "49501aa48b7980798cf0d1ddd6f85644118bd58f17bb7ff98ae4527dac4aa16a",
+    "checkpoint_sha256": "84e9a388d64aa3738fda6a7669b58dd0b33d8d1683e550b3b747078ea702b3f4",
+    "accuracy": 0.5,
+    "macro_f1": 0.4950980392156863,
+    "per_class_recall": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot1_matched_control_seed42"
+    },
+    "result_sha256": "207b7c6567750845ee56095c7eb272c84f69eb95c7b28799920fc31bf1679172",
+    "checkpoint_sha256": "39770ac6a8684d193ce98a85c174d0d6fdc6eea7637dc45a13bcaae3dd2f09c3",
+    "accuracy": 0.62,
+    "macro_f1": 0.562810720419416,
+    "per_class_recall": [
+      0.0,
+      0.76,
+      0.8,
+      0.92
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        19,
+        4,
+        2
+      ],
+      [
+        2,
+        1,
+        20,
+        2
+      ],
+      [
+        1,
+        1,
+        0,
+        23
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "c372107f04b04d01d9fa89781690578890ac05e004c525e25be6a0e2604882c4",
+    "checkpoint_sha256": "788b485cbc31e7c8c2e2f0f1470914822a0a028ad353ea5c40863024f5f27af5",
+    "accuracy": 0.53,
+    "macro_f1": 0.5283018867924528,
+    "per_class_recall": [
+      0.0,
+      1.0,
+      0.12,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot2_matched_control_seed42"
+    },
+    "result_sha256": "1cc654783c74485c27767e78a9393585821566adc1b6bc318379a58f119c250f",
+    "checkpoint_sha256": "8aa388d16343813228d031f5820e82441d73795508481404f2d8feb6d99c7bf1",
+    "accuracy": 0.68,
+    "macro_f1": 0.6295995670995671,
+    "per_class_recall": [
+      0.08,
+      0.76,
+      0.88,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        23,
+        0
+      ],
+      [
+        0,
+        19,
+        0,
+        6
+      ],
+      [
+        3,
+        0,
+        22,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "result_sha256": "0e573edf98649ec888550e2b00805b0ec7a09da1c6edb279a9697c1a77af99bf",
+    "checkpoint_sha256": "fac178db983b95d01ccd917f71b5186a57422fc7f27f1f71d0a3e45dce9c0a61",
+    "accuracy": 0.71,
+    "macro_f1": 0.7041889483065954,
+    "per_class_recall": [
+      0.32,
+      1.0,
+      0.52,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        11,
+        0,
+        13,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "support_per_class": [
+      25,
+      25,
+      25,
+      25
+    ]
+  }
+]

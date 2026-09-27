@@ -1,0 +1,173 @@
+{
+  "schema": "channel_robust_class_mappings_v1",
+  "index_base": 0,
+  "datasets": {
+    "waterpump": {
+      "num_classes": 5,
+      "classes": [
+        {
+          "index": 0,
+          "display_name": "正常",
+          "chinese_name": "正常",
+          "original_names": ["normal", "Normal"],
+          "translation_status": "verified_by_local_description_and_filename_rule"
+        },
+        {
+          "index": 1,
+          "display_name": "内圈故障",
+          "chinese_name": "内圈故障",
+          "original_names": ["fault_bearing_2_inner", "Fault_Bearing_2_Inner"],
+          "translation_status": "verified_by_local_description_and_filename_rule"
+        },
+        {
+          "index": 2,
+          "display_name": "外圈故障",
+          "chinese_name": "外圈故障",
+          "original_names": ["fault_bearing_outer", "Fault_Bearing_Outer"],
+          "translation_status": "verified_by_local_description_and_filename_rule"
+        },
+        {
+          "index": 3,
+          "display_name": "齿轮断齿",
+          "chinese_name": "齿轮断齿",
+          "original_names": ["fault_gear_duanchi", "Fault_Gear_Duanchi"],
+          "translation_status": "verified_by_local_description_and_filename_rule"
+        },
+        {
+          "index": 4,
+          "display_name": "齿轮缺齿",
+          "chinese_name": "齿轮缺齿",
+          "original_names": ["fault_gear_quechi", "Fault_Gear_Quechi"],
+          "translation_status": "verified_by_local_description_and_filename_rule"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "workbench/build_waterpump_transfer_tasks.py",
+          "sha256": "347c3dbcc28d99913e3d03ccd3b2bb01e5f4fe1ff575be39ecd5bc5cd0340917",
+          "relevance": "FAULT_KEYWORDS defines the exact zero-based label order used to build the prepared and schema-3 data."
+        },
+        {
+          "path": "数据集/水泵/说明.txt",
+          "sha256": "94ddae978b0d6cd68a06bae79c8a6f9b7f33a7f69abef0c3b29c61a80953daa3",
+          "relevance": "Local dataset description lists normal, inner-race, outer-race, broken-tooth and missing-tooth states."
+        },
+        {
+          "path": "data_versions/antipair_v1_waterpump_source_first_private_audit/reference/raw_records.json",
+          "sha256": "8593f3557079c0a57541df768fa42e637f581e555ddba2b707fcace2bed6fc78",
+          "relevance": "Frozen schema-3 construction evidence binds every original MAT filename and condition to the zero-based label."
+        }
+      ],
+      "limitations": [
+        "The mapping identifies training classes; it does not add severity, fault size, or bearing-position claims beyond the local filenames.",
+        "The raw filenames contain extra position and run tokens that are not separate classes."
+      ]
+    },
+    "gearbox": {
+      "num_classes": 4,
+      "classes": [
+        {
+          "index": 0,
+          "display_name": "正常",
+          "chinese_name": "正常",
+          "original_names": ["正常"],
+          "translation_status": "original_chinese_name"
+        },
+        {
+          "index": 1,
+          "display_name": "中间太阳轮半断齿",
+          "chinese_name": "中间太阳轮半断齿",
+          "original_names": ["中间太阳轮半断齿"],
+          "translation_status": "original_chinese_name"
+        },
+        {
+          "index": 2,
+          "display_name": "中间行星轮半断齿",
+          "chinese_name": "中间行星轮半断齿",
+          "original_names": ["中间行星轮半断齿"],
+          "translation_status": "original_chinese_name"
+        },
+        {
+          "index": 3,
+          "display_name": "输出轴半断齿",
+          "chinese_name": "输出轴半断齿",
+          "original_names": ["输出轴半断齿", "输出轴齿轮半断齿"],
+          "translation_status": "original_chinese_aliases_collapsed_by_builder"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "workbench/build_labgearbox_transfer_tasks.py",
+          "sha256": "3e0244819cd765ff0efbb4c40eeef87ec6d6a79ea35ba1b9fc32849f9c696924",
+          "relevance": "FAULT_KEYWORDS defines the exact zero-based label order and the two accepted label-3 filename aliases."
+        },
+        {
+          "path": "data_versions/antipair_v1_gearbox_source_first_private_audit/reference/raw_records.json",
+          "sha256": "4bd4675196ac125f18fde52cd7d20f83a65158fab07d4b3a62d8104680285b8c",
+          "relevance": "Frozen schema-3 construction evidence binds every original Chinese MAT filename and condition to the zero-based label."
+        }
+      ],
+      "limitations": [
+        "Label 3 intentionally collapses two local filename spellings into one training class.",
+        "The mapping does not infer crack size or tooth-loss geometry beyond the original Chinese filenames."
+      ]
+    },
+    "seu_gearbox": {
+      "num_classes": 5,
+      "classes": [
+        {
+          "index": 0,
+          "display_name": "健康状态",
+          "chinese_name": "健康状态",
+          "original_names": ["Health"],
+          "translation_status": "literal_name_supported"
+        },
+        {
+          "index": 1,
+          "display_name": "Chipped",
+          "chinese_name": null,
+          "original_names": ["Chipped"],
+          "translation_status": "chinese_mechanism_not_locally_verified"
+        },
+        {
+          "index": 2,
+          "display_name": "Miss",
+          "chinese_name": null,
+          "original_names": ["Miss"],
+          "translation_status": "chinese_mechanism_not_locally_verified"
+        },
+        {
+          "index": 3,
+          "display_name": "Root",
+          "chinese_name": null,
+          "original_names": ["Root"],
+          "translation_status": "chinese_mechanism_not_locally_verified"
+        },
+        {
+          "index": 4,
+          "display_name": "Surface",
+          "chinese_name": null,
+          "original_names": ["Surface"],
+          "translation_status": "chinese_mechanism_not_locally_verified"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "protocol_next/seu_intake.py",
+          "sha256": "0ac3c451e4c408c23cd39212907777afcf0927c8a7414657047e8635827b9d05",
+          "relevance": "CLASSES and enumerate(CLASSES) define the exact zero-based order used during SEU intake."
+        },
+        {
+          "path": "data_versions/antipair_v1_seu_gearbox_source_first_private_audit/reference/raw_records.json",
+          "sha256": "041400d2fbbafc69526202779c5da1a8c648a39634b03c3d44b09d1c008b1fe4",
+          "relevance": "Frozen source-first construction evidence binds each original MAT filename category to labels 0 through 4."
+        }
+      ],
+      "limitations": [
+        "The supplied local MAT files and intake metadata use only the category tokens Health, Chipped, Miss, Root and Surface.",
+        "No authoritative Chinese fault-mechanism names are present in the local construction evidence for Chipped, Miss, Root or Surface; their original English categories are therefore retained.",
+        "These class names do not change the separate 5120 Hz and channel-semantics evidence boundary."
+      ]
+    }
+  }
+}

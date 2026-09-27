@@ -1,0 +1,143 @@
+{
+  "schema": "channel_robust_v2_task_registry_v1",
+  "window_samples": 2048,
+  "source_slots": [
+    0,
+    1,
+    2
+  ],
+  "sampling_rate_hz": {
+    "waterpump": 24000,
+    "gearbox": 24000
+  },
+  "tasks": {
+    "WP-S0": {
+      "metadata": {
+        "dataset": "waterpump",
+        "family": "same_condition_cross_sensor",
+        "source": {
+          "condition": "C1",
+          "group": "P1",
+          "raw_columns_zero_based": [
+            7,
+            8,
+            9
+          ]
+        },
+        "target": {
+          "condition": "C1",
+          "group": "P2",
+          "raw_columns_zero_based": [
+            10,
+            12,
+            11
+          ]
+        },
+        "classes": 5
+      },
+      "data_metadata_sha256": {
+        "version_manifest.json": "8becfde39d4f16cdb50ded5cca8e33bcd487aed89c8cb2cf79194108d5c9c15a",
+        "build_plan.json": "731e55ce59be9f8410d610dfea9de531eb6ac6e8b840e34bcfacd0be65125520",
+        "tasks/WP-S0/task_manifest.json": "510c579fb94cc90634f2c3d9b3b04ae69dd9cef596ace022a33664ea5ec8d09e"
+      },
+      "runtime_path_required": true,
+      "target_final_included": false
+    },
+    "WP-D1": {
+      "metadata": {
+        "dataset": "waterpump",
+        "family": "cross_sensor_and_condition",
+        "source": {
+          "condition": "C2",
+          "group": "P1",
+          "raw_columns_zero_based": [
+            7,
+            8,
+            9
+          ]
+        },
+        "target": {
+          "condition": "C3",
+          "group": "P2",
+          "raw_columns_zero_based": [
+            10,
+            12,
+            11
+          ]
+        },
+        "classes": 5
+      },
+      "data_metadata_sha256": {
+        "version_manifest.json": "8becfde39d4f16cdb50ded5cca8e33bcd487aed89c8cb2cf79194108d5c9c15a",
+        "build_plan.json": "731e55ce59be9f8410d610dfea9de531eb6ac6e8b840e34bcfacd0be65125520",
+        "tasks/WP-D1/task_manifest.json": "8086ba04d13697e7b13a3f78c0a7a91076dadd6bf217195e1b4d01689d03a5d7"
+      },
+      "runtime_path_required": true,
+      "target_final_included": false
+    },
+    "PG-S1": {
+      "metadata": {
+        "dataset": "gearbox",
+        "family": "same_condition_cross_sensor",
+        "source": {
+          "condition": "C1",
+          "group": "G2",
+          "raw_columns_zero_based": [
+            3,
+            4,
+            5
+          ]
+        },
+        "target": {
+          "condition": "C1",
+          "group": "G3",
+          "raw_columns_zero_based": [
+            6,
+            7,
+            8
+          ]
+        },
+        "classes": 4
+      },
+      "data_metadata_sha256": {
+        "version_manifest.json": "55b72b95ba715f46c03026036b219f22891b102ef97c88a6c08426952f7cc49a",
+        "build_plan.json": "d434062528ede88c93d4a8179892802e3ce2f1d671d6d20c649404bd18fcc253",
+        "tasks/PG-S1/task_manifest.json": "5a9677e27b2653f118bc6a0884965b7a52ddefc401b4cbd8e7cd9e62bd569f98"
+      },
+      "runtime_path_required": true,
+      "target_final_included": false
+    },
+    "PG-D1": {
+      "metadata": {
+        "dataset": "gearbox",
+        "family": "cross_sensor_and_condition",
+        "source": {
+          "condition": "C4",
+          "group": "G2",
+          "raw_columns_zero_based": [
+            3,
+            4,
+            5
+          ]
+        },
+        "target": {
+          "condition": "C3",
+          "group": "G3",
+          "raw_columns_zero_based": [
+            6,
+            7,
+            8
+          ]
+        },
+        "classes": 4
+      },
+      "data_metadata_sha256": {
+        "version_manifest.json": "55b72b95ba715f46c03026036b219f22891b102ef97c88a6c08426952f7cc49a",
+        "build_plan.json": "d434062528ede88c93d4a8179892802e3ce2f1d671d6d20c649404bd18fcc253",
+        "tasks/PG-D1/task_manifest.json": "044a8fa373ab049eadcbb2568c3605f8e9ee6e7772e2afe00c3c79bda57181a4"
+      },
+      "runtime_path_required": true,
+      "target_final_included": false
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# WIDAN core GPU environment, validated 2026-09-09 on WSL Ubuntu 22.04 / Python 3.10.12.
+# Install into a NEW environment. torch uses https://download.pytorch.org/whl/cu118.
+# This is a core dependency lock, not a copy of unrelated VM-UNet packages.
+torch==2.1.2+cu118
+numpy==1.26.4
+scipy==1.11.4
+pandas==2.2.3
+scikit-learn==1.5.2
+joblib==1.6.0
+threadpoolctl==3.6.0
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+tzdata==2026.3
+six==1.17.0
+cloudpickle==3.1.2

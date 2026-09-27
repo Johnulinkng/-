@@ -1,0 +1,2658 @@
+[
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_all3_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_all3_matched_control_seed42_cuda",
+    "checkpoint_sha256": "52d443ef962096a75903c18b93fb50335c0eeebc4e8a4440c24d3c0abc54ee45",
+    "selected_epoch": 58,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0010726457758573815
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 27.464346044000024
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_all3_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "bec9208b07b1930b36c7614f5a8bf815dbafe0b7291e8842d42582b84438cc27",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006562213098125842
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 78.99510302100003
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot0_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_slot0_matched_control_seed42_cuda",
+    "checkpoint_sha256": "d164e7e8f7659824ed91b4e8fcbaa1b9ee744635194a72105a261857a43bf701",
+    "selected_epoch": 58,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0010726457758573815
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 27.749047270000005
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_slot0_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "bb7e920145c5dc1c55809801e0a5a0c7a3ebb33e2aa60e4cfa4e2e2010c8f6de",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006043275002933418
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 84.89934249699996
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot1_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_slot1_matched_control_seed42_cuda",
+    "checkpoint_sha256": "8436c18a532ef9b4550a68b1832efe2d4b531aaf6701712ac77e55d9750b6706",
+    "selected_epoch": 58,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0010726457758573815
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 27.167893209000002
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_slot1_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "59b11f13245cc0db7c96bb92183bf664cbe32cd69ac99b5992085f72fdf7d7fa",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006249682926572859
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 79.87949177899999
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot2_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_slot2_matched_control_seed42_cuda",
+    "checkpoint_sha256": "01bd1d4b9b50a893bdef319b742684f376cf199c26a4521354fd04a114eaf451",
+    "selected_epoch": 58,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0010726457758573815
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 26.210553614000002
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-S0_source012_target_slot2_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "23632332d87679e465312985123cabe4023e290b4da4c3e753a07dc77a4a6828",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006094971620865787
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 76.34711653500001
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_all3_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_all3_matched_control_seed42_cuda",
+    "checkpoint_sha256": "1eab7c714713b4321cb236207d0da3ff00372f9ccda31a74254a7ef19d381c87",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006758032980530213
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 27.30066546500001
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_all3_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "8cb69614d0fe87548a27c82796ca8976ae898716253e3b08030b5e208a74dcd2",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006266314126551152
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 82.06053412699998
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot0_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_slot0_matched_control_seed42_cuda",
+    "checkpoint_sha256": "2263663727059bad67b00704e3c99c08dc1499dbe46d127a1f75956428db9aee",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006758032980530213
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 27.939757077999957
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_slot0_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "e3437fc5eeb77413a1881367fac239148b286ce48dfc61fb9220148a3bfa6a9f",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0005626689461835971
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 76.81458462700004
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot1_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_slot1_matched_control_seed42_cuda",
+    "checkpoint_sha256": "fbcf3a77109636029713bd2268be549c5fb6eebe63f147a693c1b21dff5ccaaf",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006758032980530213
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 30.622538413999905
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_slot1_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "c1a2b70feda5697764129fb44bf93a9ca925fd601a802f69d7180abe9fd6afa4",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0005566915917055061
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 75.58205404599994
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot2_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_slot2_matched_control_seed42_cuda",
+    "checkpoint_sha256": "0a9e9ae47c31233a06ce219910cdef4b665da14e10a8386c2f332fd1ee7ea1db",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0006758032980530213
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 27.932238439000002
+  },
+  {
+    "arm": {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/WP-D1_source012_target_slot2_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "52ad248462243a4d768d2b402b8dd2eab493d7b7954df13001b72b6aad5405f6",
+    "selected_epoch": 21,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          150,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          150
+        ]
+      ],
+      "loss": 0.0005693063912137101
+    },
+    "optimizer_steps": 2760,
+    "alignment_steps": 1794,
+    "projection_steps": 1794,
+    "training_seconds": 75.48708191799994
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_all3_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_all3_matched_control_seed42_cuda",
+    "checkpoint_sha256": "71ce9e96440cc1984093eecd3f1201981a35dfdf7d70d2be3616b1c9c0e36b78",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0016633205348625779
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.996052808000059
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_all3_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "3577aeba0d432aabbb94f562d5af60aa6f2b906c85d4a4044212ede4985af1c5",
+    "selected_epoch": 26,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0038615467771887777
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 14.403178906999983
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot0_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_slot0_matched_control_seed42_cuda",
+    "checkpoint_sha256": "f8f95b14845c6a15fda4eac0f48878f83555fe112fc086ad289aff5bb564a215",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0016633205348625779
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.953462972000011
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_slot0_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "874adf59336a080f08dcbb2ac28a4670c6628b489eae67f558169fc65fa2dd91",
+    "selected_epoch": 26,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.003865393027663231
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 13.301303038000015
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot1_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_slot1_matched_control_seed42_cuda",
+    "checkpoint_sha256": "48d9536842c5968a0b42d15267a80411702a9ac1b80bca743d28c6befcf1b55b",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0016633205348625779
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 5.236649504999946
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_slot1_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "dbc60131a6323caec86bb79aa0a686215f59b958545d18177fc19991210c1479",
+    "selected_epoch": 26,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0038523407001048327
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 12.060600108000017
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot2_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_slot2_matched_control_seed42_cuda",
+    "checkpoint_sha256": "a50f9b1bdf36afd3dedb01a61d7ac42480d79dfa280192ee0f39466bad8ea87f",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0016633205348625779
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.517672595999898
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-S1_source012_target_slot2_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "adbd422473e810d3247bfee6557462dd8195f1643462fe21b4ced54ec7ccfa64",
+    "selected_epoch": 26,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.0034777385834604503
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 11.87186130300006
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_all3_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_all3_matched_control_seed42_cuda",
+    "checkpoint_sha256": "04304e8dda04efc33c4c4c0dd5b0c2eae9b76a4648403d61fe70cce1b5b2c9a4",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.002389531619846821
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.50952286100005
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_all3_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "bd511ca0de371c4ae3ddf10d4bc6ead13c48b0ff187e44385fa0983a8ac7c00f",
+    "selected_epoch": 22,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.004350696224719286
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 12.856507090000036
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot0_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_slot0_matched_control_seed42_cuda",
+    "checkpoint_sha256": "db5deb3a966d1f2860d2105e73e91b1b4ddcf142c150d162a4a26b4f96129e3a",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.002389531619846821
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.88692864099994
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_slot0_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "84e9a388d64aa3738fda6a7669b58dd0b33d8d1683e550b3b747078ea702b3f4",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.003703571273945272
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 12.696933038999987
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot1_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_slot1_matched_control_seed42_cuda",
+    "checkpoint_sha256": "39770ac6a8684d193ce98a85c174d0d6fdc6eea7637dc45a13bcaae3dd2f09c3",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.002389531619846821
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.581443663000073
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_slot1_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "788b485cbc31e7c8c2e2f0f1470914822a0a028ad353ea5c40863024f5f27af5",
+    "selected_epoch": 51,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.003670278093777597
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 11.628465318000053
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot2_matched_control_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_slot2_matched_control_seed42_cuda",
+    "checkpoint_sha256": "8aa388d16343813228d031f5820e82441d73795508481404f2d8feb6d99c7bf1",
+    "selected_epoch": 59,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.002389531619846821
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 0,
+    "projection_steps": 0,
+    "training_seconds": 4.562079661000098
+  },
+  {
+    "arm": {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    "run": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4/runs/PG-D1_source012_target_slot2_channel_robust_alignment_v1_seed42_cuda",
+    "checkpoint_sha256": "fac178db983b95d01ccd917f71b5186a57422fc7f27f1f71d0a3e45dce9c0a61",
+    "selected_epoch": 22,
+    "source_val": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_precision": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_f1": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "loss": 0.004366205185651779
+    },
+    "optimizer_steps": 480,
+    "alignment_steps": 312,
+    "projection_steps": 312,
+    "training_seconds": 11.741564231999973
+  }
+]

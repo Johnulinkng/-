@@ -1,0 +1,1436 @@
+{
+  "schema": "channel_robust_v2_validation_protocol_v1",
+  "created_local": "2026-09-25",
+  "status": "protocol_only_not_launched",
+  "paths": {
+    "markdown": "D:\\3800\\audit\\channel_robust_v2_validation_protocol_20260925.md",
+    "json": "D:\\3800\\audit\\channel_robust_v2_validation_protocol_20260925.json"
+  },
+  "information_boundary": {
+    "target_dev_metrics_reviewed_for_exposure_audit": true,
+    "target_dev_signal_or_label_arrays_opened_by_this_protocol_work": false,
+    "target_final_read": false,
+    "target_final_loader_may_be_constructed": false,
+    "training_started": false,
+    "wsl_started": false,
+    "gpu_started": false,
+    "frozen_v4_modified": false,
+    "claim": "Development protocol on historically exposed partitions; never a fresh blind or independent-record confirmation."
+  },
+  "objective": "Test whether equal-cardinality physical-slot-stratified channel MMD corrects CRA-v1 channel-count bias and transfers to new task-mode directions, while changing no other model or loss component.",
+  "selection_rule": {
+    "rule": "For each dataset and S/C/D family choose the second enumerated source-first task, before viewing any candidate CRA-v2 score.",
+    "selected_tasks": [
+      "WP-S1",
+      "WP-C2",
+      "WP-D2",
+      "PG-S2",
+      "PG-C2",
+      "PG-D2",
+      "SEU-S2",
+      "SEU-C2",
+      "SEU-D2"
+    ],
+    "excluded_v1_four": [
+      "WP-S0",
+      "WP-D1",
+      "PG-S1",
+      "PG-D1"
+    ],
+    "why": "A deterministic registry rule avoids choosing directions from favorable historical accuracies. C2 adds the missing condition-only family; S2/C2/D2 avoid the exact four-task CRA-v1 screen.",
+    "three_to_one_scope": "Only the preselected same-condition S task in each dataset is expanded to target slots 0, 1 and 2. C/D 3-to-1 is deferred to a later preregistered expansion."
+  },
+  "data_contracts": [
+    {
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "version_manifest_sha256": "8becfde39d4f16cdb50ded5cca8e33bcd487aed89c8cb2cf79194108d5c9c15a",
+      "build_plan_sha256": "731e55ce59be9f8410d610dfea9de531eb6ac6e8b840e34bcfacd0be65125520",
+      "schema_version": 3,
+      "classes": 5,
+      "window_size": 2048,
+      "stride_samples": 4096,
+      "gap_samples": 24000,
+      "sampling_rate_hz": null,
+      "record_independent": false,
+      "legacy_prepared_root": "D:\\3800\\WIDAN\\WIDAN_current_model_datasets_20260907\\prepared_transfer_tasks_waterpump",
+      "dataset": "waterpump",
+      "protocol": "antipaired_role_banks_v1",
+      "public_target_labels_present": false,
+      "target_label_location": "sibling private audit tree; forbidden to training and this protocol",
+      "selected_task_ids": [
+        "WP-S1",
+        "WP-C2",
+        "WP-D2"
+      ],
+      "limitations": [
+        "Windows come from long recordings/time blocks; this is not independent repeated acquisition evidence.",
+        "Authoritative sampling rate is absent from the schema-3 manifest; physical-Hz claims are prohibited.",
+        "Legacy prepared root contains directly readable target_label.npy and is forbidden for v2 fit/evaluation."
+      ],
+      "raw_records_reference": {
+        "path": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first_private_audit\\reference\\raw_records.json",
+        "sha256": "8593f3557079c0a57541df768fa42e637f581e555ddba2b707fcace2bed6fc78",
+        "scope": "raw filename, condition, channel and zero-based class lineage only; no target label arrays"
+      }
+    },
+    {
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "version_manifest_sha256": "55b72b95ba715f46c03026036b219f22891b102ef97c88a6c08426952f7cc49a",
+      "build_plan_sha256": "d434062528ede88c93d4a8179892802e3ce2f1d671d6d20c649404bd18fcc253",
+      "schema_version": 3,
+      "classes": 4,
+      "window_size": 2048,
+      "stride_samples": 2048,
+      "gap_samples": 24000,
+      "sampling_rate_hz": null,
+      "record_independent": false,
+      "legacy_prepared_root": "D:\\3800\\WIDAN\\WIDAN_current_model_datasets_20260907\\prepared_transfer_tasks",
+      "dataset": "gearbox",
+      "protocol": "antipaired_role_banks_v1",
+      "public_target_labels_present": false,
+      "target_label_location": "sibling private audit tree; forbidden to training and this protocol",
+      "selected_task_ids": [
+        "PG-S2",
+        "PG-C2",
+        "PG-D2"
+      ],
+      "limitations": [
+        "Windows come from long recordings/time blocks; this is not independent repeated acquisition evidence.",
+        "Authoritative sampling rate is absent from the schema-3 manifest; physical-Hz claims are prohibited.",
+        "Legacy prepared root contains directly readable target_label.npy and is forbidden for v2 fit/evaluation."
+      ],
+      "raw_records_reference": {
+        "path": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first_private_audit\\reference\\raw_records.json",
+        "sha256": "4bd4675196ac125f18fde52cd7d20f83a65158fab07d4b3a62d8104680285b8c",
+        "scope": "raw filename, condition, channel and zero-based class lineage only; no target label arrays"
+      }
+    },
+    {
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "version_manifest_sha256": "011b4b8c3aa8b05b3e418bab64bfec6229204e9d643653cee9cb4d29233af144",
+      "build_plan_sha256": "f62c9b43ffb2ff8f946f60d006c60a1901106d984165f7bb51fb19c2f89c8adb",
+      "schema_version": 3,
+      "classes": 5,
+      "window_size": 2048,
+      "stride_samples": 2048,
+      "gap_samples": 5120,
+      "sampling_rate_hz": 5120,
+      "record_independent": false,
+      "raw_root": "D:\\3800\\gearbox_already",
+      "dataset": "seu_gearbox",
+      "protocol": "antipaired_role_banks_v1",
+      "public_target_labels_present": false,
+      "target_label_location": "sibling private audit tree; forbidden to training and this protocol",
+      "selected_task_ids": [
+        "SEU-S2",
+        "SEU-C2",
+        "SEU-D2"
+      ],
+      "limitations": [
+        "Windows come from long recordings/time blocks; this is not independent repeated acquisition evidence."
+      ],
+      "raw_records_reference": {
+        "path": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first_private_audit\\reference\\raw_records.json",
+        "sha256": "041400d2fbbafc69526202779c5da1a8c648a39634b03c3d44b09d1c008b1fe4",
+        "scope": "raw filename, condition, channel and zero-based class lineage only; no target label arrays"
+      }
+    }
+  ],
+  "historical_exposure": {
+    "global_status": "all selected target-development partitions are historically exposed",
+    "interpretation": "Lab slot-specific S-task 3-to-1 combinations are new task-mode combinations in the bounded registry scan, but reuse a partition whose labels were already decoded for all3. SEU selected modes are all historically exposed.",
+    "evidence_files": [
+      {
+        "path": "D:\\3800\\experiments\\20260912_unpaired_spectral_calibration_allS_v1\\results.json",
+        "sha256": "5d7ded7cc7ba3855ea4135e3bb49428d227b4698cd8e02ea941d911076dbbaee",
+        "covers": [
+          "WP-S1",
+          "PG-S2"
+        ],
+        "scope": "historical target_dev all-channel spectral-calibration metrics"
+      },
+      {
+        "path": "D:\\3800\\experiments\\20260912_unpaired_spectral_calibration_cross_v1\\results.json",
+        "sha256": "87758bfdac1cd036f876e4eaac68f3519aa46e6cf38b06b46cff9ac5c9b6d3ab",
+        "covers": [
+          "WP-C2",
+          "WP-D2",
+          "PG-C2",
+          "PG-D2"
+        ],
+        "scope": "historical target_dev all-channel cross-condition/cross-sensor metrics"
+      },
+      {
+        "path": "D:\\3800\\experiments\\20260915_shared_ridge_seu_v1\\dev_results.json",
+        "sha256": "bbe4d9ffaaad8bd27b347b59a05fe3914de2afeb1775c9b4c951e212ac83b4e7",
+        "covers": [
+          "SEU-S2",
+          "SEU-C2",
+          "SEU-D2"
+        ],
+        "scope": "historical target_dev Ridge metrics; S2 includes all3 and every target slot"
+      },
+      {
+        "path": "D:\\3800\\experiments\\20260925_channel_robust_screen_v4\\summary.json",
+        "sha256": "5782d567fee6b4817f733e22cbc6107d0975f98db7672ce659154ba73ad91617",
+        "covers": [
+          "WP-S0",
+          "WP-D1",
+          "PG-S1",
+          "PG-D1"
+        ],
+        "scope": "CRA-v1 four-task development screen; excluded from v2 task selection"
+      }
+    ],
+    "task_mode_registry": {
+      "WP-S1": {
+        "all3": "exposed",
+        "slots": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed"
+      },
+      "WP-C2": {
+        "all3": "exposed",
+        "slots": "not in this minimal matrix"
+      },
+      "WP-D2": {
+        "all3": "exposed",
+        "slots": "not in this minimal matrix"
+      },
+      "PG-S2": {
+        "all3": "exposed",
+        "slots": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed"
+      },
+      "PG-C2": {
+        "all3": "exposed",
+        "slots": "not in this minimal matrix"
+      },
+      "PG-D2": {
+        "all3": "exposed",
+        "slots": "not in this minimal matrix"
+      },
+      "SEU-S2": {
+        "all3": "exposed",
+        "slots": "exposed"
+      },
+      "SEU-C2": {
+        "all3": "exposed",
+        "slots": "not in this minimal matrix"
+      },
+      "SEU-D2": {
+        "all3": "exposed",
+        "slots": "not in this minimal matrix"
+      }
+    },
+    "forbidden_wording": [
+      "fresh blind test",
+      "independent confirmation set",
+      "independent acquisition generalization",
+      "unseen target partition"
+    ]
+  },
+  "variants": [
+    {
+      "id": "matched_control",
+      "role": "architecture-matched simple control",
+      "contract": "mean fusion; no channel mask; no fused/channel MMD; no gradient projection",
+      "claim_boundary": "This is the frozen v1 matched control, not a fully target-independent Source Only baseline because the shared preprocessing/calibration contract is retained."
+    },
+    {
+      "id": "cra_v1_frozen",
+      "role": "direct predecessor control",
+      "contract": "unchanged CRA-v1 bounded fusion + mask + fused MMD + biased unequal-cardinality channel MMD + safe projection",
+      "claim_boundary": "Must be reproduced from a freshly frozen v2 code snapshot; no reuse across task/target-mode identities unless every reuse key matches."
+    },
+    {
+      "id": "cra_v2_no_channel_mmd",
+      "role": "mechanism ablation",
+      "contract": "same as CRA-v2 candidate except channel-MMD weight is exactly zero and the channel-MMD sampler is not consumed",
+      "claim_boundary": "Isolates whether balanced channel alignment adds value beyond fusion, masking, fused MMD and projection."
+    },
+    {
+      "id": "cra_v2_balanced_channel_mmd",
+      "role": "candidate",
+      "contract": "CRA-v1 full recipe with only channel-MMD sampling changed to equal B-by-B, physical-slot-stratified sampling; all loss weights and other algorithms frozen",
+      "claim_boundary": "A performance gain can be attributed only to the sample-cardinality correction, not to a new architecture stack."
+    }
+  ],
+  "randomness": {
+    "model_seeds": [
+      42,
+      43,
+      44
+    ],
+    "mask_seed_formula": "424242 + model_seed",
+    "mask_seeds": [
+      424284,
+      424285,
+      424286
+    ],
+    "channel_mmd_seed_formula": "525252 + model_seed",
+    "channel_mmd_seeds": [
+      525294,
+      525295,
+      525296
+    ],
+    "rng_isolation": "model initialization, DataLoader shuffle, channel mask and channel-MMD sampling must use separate generators and recorded initial/final state hashes"
+  },
+  "conditions": [
+    {
+      "dataset": "waterpump",
+      "task_id": "WP-S1",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first\\tasks\\WP-S1\\task_manifest.json",
+      "task_manifest_sha256": "b5637eed7a47c5f8e1e176d149910d3980b3c836b93d2fa0c727c6442a981c5e",
+      "source": {
+        "condition": "C2",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "waterpump",
+      "task_id": "WP-S1",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first\\tasks\\WP-S1\\task_manifest.json",
+      "task_manifest_sha256": "b5637eed7a47c5f8e1e176d149910d3980b3c836b93d2fa0c727c6442a981c5e",
+      "source": {
+        "condition": "C2",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0
+      ],
+      "target_mode": "3to1_slot0",
+      "historical_target_dev": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed",
+      "target_raw_column_zero_based": 10
+    },
+    {
+      "dataset": "waterpump",
+      "task_id": "WP-S1",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first\\tasks\\WP-S1\\task_manifest.json",
+      "task_manifest_sha256": "b5637eed7a47c5f8e1e176d149910d3980b3c836b93d2fa0c727c6442a981c5e",
+      "source": {
+        "condition": "C2",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        1
+      ],
+      "target_mode": "3to1_slot1",
+      "historical_target_dev": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed",
+      "target_raw_column_zero_based": 12
+    },
+    {
+      "dataset": "waterpump",
+      "task_id": "WP-S1",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first\\tasks\\WP-S1\\task_manifest.json",
+      "task_manifest_sha256": "b5637eed7a47c5f8e1e176d149910d3980b3c836b93d2fa0c727c6442a981c5e",
+      "source": {
+        "condition": "C2",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        2
+      ],
+      "target_mode": "3to1_slot2",
+      "historical_target_dev": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed",
+      "target_raw_column_zero_based": 11
+    },
+    {
+      "dataset": "waterpump",
+      "task_id": "WP-C2",
+      "family": "same_sensor_cross_condition",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first\\tasks\\WP-C2\\task_manifest.json",
+      "task_manifest_sha256": "a88f3bf1440b8203e1f409e3354c6866514883629ffa578eea494ab031fd4cc6",
+      "source": {
+        "condition": "C2",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C3",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "condition_claim": "speed changes; load is unreported, so do not call this pure speed-load attribution",
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "waterpump",
+      "task_id": "WP-D2",
+      "family": "cross_sensor_and_condition",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_waterpump_source_first\\tasks\\WP-D2\\task_manifest.json",
+      "task_manifest_sha256": "6598bf968ddd090481f3b8e8d156adb2639829abb03e424728485c64708094a1",
+      "source": {
+        "condition": "C3",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C4",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "gearbox",
+      "task_id": "PG-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first\\tasks\\PG-S2\\task_manifest.json",
+      "task_manifest_sha256": "66d2edae32c538a35600b18aeb75a269b95ad65aba346e498027523c67021285",
+      "source": {
+        "condition": "C2",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "gearbox",
+      "task_id": "PG-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first\\tasks\\PG-S2\\task_manifest.json",
+      "task_manifest_sha256": "66d2edae32c538a35600b18aeb75a269b95ad65aba346e498027523c67021285",
+      "source": {
+        "condition": "C2",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0
+      ],
+      "target_mode": "3to1_slot0",
+      "historical_target_dev": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed",
+      "target_raw_column_zero_based": 6
+    },
+    {
+      "dataset": "gearbox",
+      "task_id": "PG-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first\\tasks\\PG-S2\\task_manifest.json",
+      "task_manifest_sha256": "66d2edae32c538a35600b18aeb75a269b95ad65aba346e498027523c67021285",
+      "source": {
+        "condition": "C2",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        1
+      ],
+      "target_mode": "3to1_slot1",
+      "historical_target_dev": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed",
+      "target_raw_column_zero_based": 7
+    },
+    {
+      "dataset": "gearbox",
+      "task_id": "PG-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first\\tasks\\PG-S2\\task_manifest.json",
+      "task_manifest_sha256": "66d2edae32c538a35600b18aeb75a269b95ad65aba346e498027523c67021285",
+      "source": {
+        "condition": "C2",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        2
+      ],
+      "target_mode": "3to1_slot2",
+      "historical_target_dev": "no exact separately trained 3-to-1 task-mode record found in the bounded registry scan; partition itself is exposed",
+      "target_raw_column_zero_based": 8
+    },
+    {
+      "dataset": "gearbox",
+      "task_id": "PG-C2",
+      "family": "same_sensor_cross_condition",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first\\tasks\\PG-C2\\task_manifest.json",
+      "task_manifest_sha256": "2d46dbba810aae223c3ac55c122738603a0f74da3fce2e3ecf13f0a9d046adad",
+      "source": {
+        "condition": "C2",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C4",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "condition_claim": "speed-only under the local same-torque task definition",
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "gearbox",
+      "task_id": "PG-D2",
+      "family": "cross_sensor_and_condition",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_gearbox_source_first\\tasks\\PG-D2\\task_manifest.json",
+      "task_manifest_sha256": "a8b875dc15424d2263fd3bc79712b25d81990d17262a474408635c708b6d1727",
+      "source": {
+        "condition": "C3",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C2",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "seu_gearbox",
+      "task_id": "SEU-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first\\tasks\\SEU-S2\\task_manifest.json",
+      "task_manifest_sha256": "7e5b1573dddf88b27522922df0445e13720f6c62b963056df8b551b6e5704e6e",
+      "source": {
+        "condition": "20_0",
+        "group": "parallel",
+        "raw_columns_zero_based": [
+          4,
+          5,
+          6
+        ]
+      },
+      "target": {
+        "condition": "20_0",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "seu_gearbox",
+      "task_id": "SEU-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first\\tasks\\SEU-S2\\task_manifest.json",
+      "task_manifest_sha256": "7e5b1573dddf88b27522922df0445e13720f6c62b963056df8b551b6e5704e6e",
+      "source": {
+        "condition": "20_0",
+        "group": "parallel",
+        "raw_columns_zero_based": [
+          4,
+          5,
+          6
+        ]
+      },
+      "target": {
+        "condition": "20_0",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0
+      ],
+      "target_mode": "3to1_slot0",
+      "historical_target_dev": "exposed",
+      "target_raw_column_zero_based": 1
+    },
+    {
+      "dataset": "seu_gearbox",
+      "task_id": "SEU-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first\\tasks\\SEU-S2\\task_manifest.json",
+      "task_manifest_sha256": "7e5b1573dddf88b27522922df0445e13720f6c62b963056df8b551b6e5704e6e",
+      "source": {
+        "condition": "20_0",
+        "group": "parallel",
+        "raw_columns_zero_based": [
+          4,
+          5,
+          6
+        ]
+      },
+      "target": {
+        "condition": "20_0",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        1
+      ],
+      "target_mode": "3to1_slot1",
+      "historical_target_dev": "exposed",
+      "target_raw_column_zero_based": 2
+    },
+    {
+      "dataset": "seu_gearbox",
+      "task_id": "SEU-S2",
+      "family": "same_condition_cross_sensor",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first\\tasks\\SEU-S2\\task_manifest.json",
+      "task_manifest_sha256": "7e5b1573dddf88b27522922df0445e13720f6c62b963056df8b551b6e5704e6e",
+      "source": {
+        "condition": "20_0",
+        "group": "parallel",
+        "raw_columns_zero_based": [
+          4,
+          5,
+          6
+        ]
+      },
+      "target": {
+        "condition": "20_0",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        2
+      ],
+      "target_mode": "3to1_slot2",
+      "historical_target_dev": "exposed",
+      "target_raw_column_zero_based": 3
+    },
+    {
+      "dataset": "seu_gearbox",
+      "task_id": "SEU-C2",
+      "family": "same_sensor_cross_condition",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first\\tasks\\SEU-C2\\task_manifest.json",
+      "task_manifest_sha256": "74e3ce9fc8b0f9e20f77a8b16fab9bdd917cad55316e75e38be0e0296995bfd7",
+      "source": {
+        "condition": "30_2",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "target": {
+        "condition": "20_0",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "condition_claim": "speed and load change together; do not call this pure speed transfer",
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    },
+    {
+      "dataset": "seu_gearbox",
+      "task_id": "SEU-D2",
+      "family": "cross_sensor_and_condition",
+      "public_root": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first",
+      "task_manifest": "D:\\3800\\data_versions\\antipair_v1_seu_gearbox_source_first\\tasks\\SEU-D2\\task_manifest.json",
+      "task_manifest_sha256": "88dca018cfdbfe41436d1fdff410e4716421c6f73356b845f5bb967857141f13",
+      "source": {
+        "condition": "30_2",
+        "group": "parallel",
+        "raw_columns_zero_based": [
+          4,
+          5,
+          6
+        ]
+      },
+      "target": {
+        "condition": "20_0",
+        "group": "planetary",
+        "raw_columns_zero_based": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_slots": [
+        0,
+        1,
+        2
+      ],
+      "variants": [
+        "matched_control",
+        "cra_v1_frozen",
+        "cra_v2_no_channel_mmd",
+        "cra_v2_balanced_channel_mmd"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "training_arms_per_condition": 12,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "target_mode": "3to3_all_observed",
+      "historical_target_dev": "exposed"
+    }
+  ],
+  "arm_counts": {
+    "lab_condition_cells": 12,
+    "lab_arms": 144,
+    "external_condition_cells": 6,
+    "external_arms": 72,
+    "maximum_training_arms": 216,
+    "formula": "condition cells x 4 variants x 3 seeds",
+    "lab_breakdown": {
+      "all3_tasks": 6,
+      "three_to_one_slots": 6
+    },
+    "external_breakdown": {
+      "all3_tasks": 3,
+      "three_to_one_slots": 3
+    }
+  },
+  "training_contract": {
+    "role_order": "source_first",
+    "labeled_training_data": "source_train only",
+    "unlabeled_adaptation_data": "target_train only",
+    "checkpoint_selection": "source validation only; lexicographic maximum source-val accuracy, then minimum source-val cross-entropy, then earliest eligible epoch; eligible epochs 21..60",
+    "target_train_fault_labels_used": false,
+    "target_dev_used_during_fit_or_checkpoint_selection": false,
+    "target_final_used": false,
+    "batch_size": 32,
+    "max_epoch": 60,
+    "middle_epoch": 20,
+    "selection_start_epoch": 21,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "adaptation_weight": 0.1,
+    "max_grad_norm": 5.0,
+    "spectral_grid": "low3k_pool2",
+    "encoder_width": 64,
+    "fusion_residual_strength": 0.5,
+    "masked_ce_weight": 0.5,
+    "consistency_weight": 0.1,
+    "attention_balance_weight": 0.01,
+    "channel_alignment_weight": 0.5,
+    "strict_cuda": true,
+    "cublas_workspace_config": ":4096:8",
+    "gpu_memory_fraction": 0.3,
+    "cpu_threads": 1,
+    "max_seconds_per_arm": 1800,
+    "lab_frequency_boundary": "Waterpump and laboratory gearbox schema-3 manifests do not contain an authoritative sampling rate. Freeze the v1 bin-index representation for matched comparison, but do not interpret low3k_pool2 as a verified physical 0-3 kHz band.",
+    "seu_frequency_boundary": "5120 Hz is manifest-bound; the same spectral grid must preserve the existing Nyquist-aware contract.",
+    "checkpoint_required_metadata": [
+      "task_id",
+      "dataset",
+      "target_slots",
+      "variant",
+      "model_seed",
+      "mask_seed",
+      "channel_mmd_seed",
+      "channel_mmd_estimator",
+      "channel_mmd_sample_count",
+      "physical_slot_exposure_counts",
+      "code_sha256",
+      "data_manifest_sha256",
+      "source_selection_trace"
+    ]
+  },
+  "phases": [
+    {
+      "id": "P0",
+      "name": "implementation_and_hash_gate",
+      "training_arms": 0,
+      "target_dev_read": false,
+      "requirements": [
+        "all eight CRA-v2 MMD tests from channel_robust_alignment_v2_mmd_revision_20260925.md pass",
+        "v1 and v2 code paths differ only at the declared channel-MMD sampler/estimator boundary",
+        "plan, code, data manifests and environment receipt are hashed",
+        "legacy prepared roots are rejected"
+      ]
+    },
+    {
+      "id": "P1",
+      "name": "sealed_laboratory_fit",
+      "training_arms": 144,
+      "datasets": [
+        "waterpump",
+        "gearbox"
+      ],
+      "tasks": [
+        "WP-S1",
+        "WP-C2",
+        "WP-D2",
+        "PG-S2",
+        "PG-C2",
+        "PG-D2"
+      ],
+      "target_modes": [
+        "all3 for every task",
+        "slot0/1/2 for WP-S1 and PG-S2"
+      ],
+      "target_dev_read": false,
+      "completion": "all 144 arm checkpoints and prediction-independent training receipts sealed before any target-dev scoring"
+    },
+    {
+      "id": "P2",
+      "name": "single_laboratory_dev_decode",
+      "training_arms": 0,
+      "target_dev_read": true,
+      "requirements": [
+        "predict every arm before label decode",
+        "score the complete matrix in one immutable registry",
+        "evaluate G_lab without changing tasks, weights or seeds"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "sealed_external_fit",
+      "training_arms": 72,
+      "launch_condition": "G_lab passes exactly as frozen",
+      "datasets": [
+        "seu_gearbox"
+      ],
+      "tasks": [
+        "SEU-S2",
+        "SEU-C2",
+        "SEU-D2"
+      ],
+      "target_modes": [
+        "all3 for every task",
+        "slot0/1/2 for SEU-S2"
+      ],
+      "target_dev_read": false
+    },
+    {
+      "id": "P4",
+      "name": "single_external_dev_decode",
+      "training_arms": 0,
+      "launch_condition": "all 72 P3 checkpoints are sealed",
+      "target_dev_read": true,
+      "requirements": [
+        "score all external arms together",
+        "evaluate G_external once",
+        "do not alter laboratory claims from SEU direction results"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "G0_implementation",
+      "pass": [
+        "equal B-by-B source/target channel-MMD inputs for C=1 and C=3",
+        "same-distribution 500-seed mean ratio in [0.9,1.1] and mean difference <= 2 pooled standard errors",
+        "MMD increases monotonically for delta 0,0.25,0.5,1.0",
+        "1000-batch physical-slot count range <=1; exact replay and RNG isolation",
+        "finite nonzero encoder gradients; projection and permutation/metadata tests pass",
+        "checkpoint fail-closed metadata test passes"
+      ],
+      "on_fail": "Do not train. Fix implementation, create a new protocol revision and new hashes."
+    },
+    {
+      "id": "G_fit_completeness",
+      "pass": [
+        "every scheduled arm completed 60 epochs or resumed the same durable arm without changing RNG/config",
+        "all selected checkpoints come only from source validation",
+        "all data/code/checkpoint hashes match the predev seal",
+        "no nonfinite state and no missing arm"
+      ],
+      "on_fail": "Do not decode target-dev. Exact-config repair/resume is allowed; otherwise stop this campaign."
+    },
+    {
+      "id": "G_lab",
+      "comparison_unit": "paired task-mode-seed deltas; report means over seeds, not best seed",
+      "pass": [
+        "CRA-v2 minus CRA-v1 pooled laboratory Accuracy > 0 and Macro-F1 > 0",
+        "for all3, each S/C/D family pooled Macro-F1 delta is >= 0 and D is strictly > 0",
+        "each laboratory dataset has nonnegative pooled all3 Macro-F1 delta vs CRA-v1",
+        "for 3-to-1, pooled Accuracy and Macro-F1 deltas vs CRA-v1 are > 0; at least 4 of 6 task-slot three-seed means jointly improve; neither dataset has negative pooled Macro-F1 delta",
+        "CRA-v2 minus no-channel-MMD pooled Accuracy > 0 and Macro-F1 > 0",
+        "CRA-v2 minus matched_control pooled Accuracy > 0 and Macro-F1 > 0",
+        "CRA-v2 introduces no systematic new zero-recall class: total new-zero-recall count vs each control <= 0"
+      ],
+      "on_fail": "Do not launch SEU, AWGN or broader tasks. Preserve all results and position v2 as a failed estimator correction or a bounded system analysis; do not tune on these scores."
+    },
+    {
+      "id": "G_external",
+      "comparison_unit": "paired SEU task-mode-seed deltas",
+      "pass": [
+        "CRA-v2 minus CRA-v1 pooled Accuracy > 0 and Macro-F1 > 0",
+        "S/C/D all3 each have nonnegative Macro-F1 delta vs CRA-v1",
+        "at least 2 of 3 SEU-S2 target slots jointly improve in three-seed mean",
+        "CRA-v2 pooled Accuracy and Macro-F1 exceed no-channel-MMD and matched_control",
+        "total new-zero-recall count vs each control <= 0"
+      ],
+      "on_fail": "Do not claim cross-dataset or direction-robust benefit. Report SEU as an external limitation; no task or direction may be dropped."
+    }
+  ],
+  "stop_rules": [
+    "Any hash, schema, task identity, channel order, label-privacy, code-receipt or RNG-replay mismatch stops before the next phase.",
+    "No arm, seed, target slot, task direction or control may be deleted after a target-dev result is visible.",
+    "No hyperparameter, loss weight, epoch range, sampler or threshold may be changed inside this protocol. A change requires v3 naming and a new exposure statement.",
+    "One infrastructure resume is permitted only from the same durable checkpoint with identical hashes and RNG states; restarting until a favorable seed result is forbidden.",
+    "A missing/invalid arm blocks the paired gate; it is never silently excluded.",
+    "G_lab failure ends this validation. G_external failure ends external promotion. Target-final remains unread in every outcome."
+  ],
+  "resource_budget": {
+    "empirical_reference": {
+      "campaign": "20260925_channel_robust_screen_v4",
+      "arms": 32,
+      "summed_training_seconds": 991.256573825,
+      "median_seconds_per_arm": 20.3068662605,
+      "max_seconds_per_arm_observed": 84.899342497
+    },
+    "core_lab_fit_gpu_hours_cap": 2.0,
+    "external_fit_gpu_hours_cap": 1.0,
+    "all_dev_scoring_gpu_hours_cap": 0.5,
+    "maximum_gpu_hours": 3.5,
+    "maximum_training_arms": 216,
+    "shared_host_start_gate": [
+      "fresh GPU compute-process and memory inventory",
+      "fresh RAM/commit inventory",
+      "no conflicting WSL/PID/lock owner",
+      "plan/code/data hashes match",
+      "sufficient disk for all checkpoints and immutable logs"
+    ],
+    "on_budget_overrun": "Pause only at an arm boundary, preserve state and wait for an explicit resource decision. Do not reduce seeds, tasks, epochs or controls."
+  },
+  "reporting": {
+    "primary_metrics": [
+      "accuracy",
+      "macro_f1",
+      "per_class_recall",
+      "confusion_matrix"
+    ],
+    "stability": [
+      "three-seed mean",
+      "sample standard deviation",
+      "paired per-seed delta",
+      "joint-improvement count",
+      "zero-recall count",
+      "worst target slot"
+    ],
+    "mechanism": [
+      "channel-MMD sample shapes",
+      "physical-slot exposure counts",
+      "attention weights/entropy",
+      "projection trigger rate",
+      "pre/post projection gradient inner product",
+      "selected epoch",
+      "source-validation trace"
+    ],
+    "statistics_boundary": "Seeds and task directions are not independent acquisition replicates. Use descriptive paired deltas; do not claim population-level significance.",
+    "promotion_boundary": "Passing supports a development-stage estimator correction on exposed window-level partitions. It does not establish SOTA, independent-record generalization, noise robustness, or superiority to WIDAN/Ridge/true Source Only."
+  },
+  "deferred": {
+    "target_final": "permanently outside this protocol",
+    "noise": "only after G_lab and G_external, under a separate frozen AWGN protocol",
+    "condition_or_double_cross_3to1": "later preregistered expansion; not selected from these dev scores",
+    "publication_baselines": "true Source Only, adapted WIDAN, linear Ridge and RBF-KRR remain required for a paper-level superiority claim"
+  },
+  "evidence_receipts": {
+    "cra_v1_plan": {
+      "path": "D:\\3800\\experiments\\20260925_channel_robust_screen_v4\\plan.json",
+      "sha256": "5fb4a31df51ac095a14c656936708c5132fc4a2dfb01fabd958f67fae6730645"
+    },
+    "cra_v2_revision": {
+      "path": "D:\\3800\\audit\\channel_robust_alignment_v2_mmd_revision_20260925.md",
+      "sha256": "7bc6988af53a236455994fa4757e8eeecba26972554c2aa751d8d71c295d33f0"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "fit_anchors": 4,
+  "fit_arms": 32,
+  "dev_arms": 32,
+  "screen_gate_passed": false,
+  "target_dev_evaluated": true,
+  "target_final_evaluated": false
+}

@@ -1,0 +1,255 @@
+{
+  "schema": "channel_robust_v2_v4_reference_registry_v1",
+  "historical_threshold_baseline": true,
+  "decides_expansion": false,
+  "controls": [
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-S0_target_all3_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-S0_target_all3_matched_control_seed42.pth",
+      "checkpoint_sha256": "52d443ef962096a75903c18b93fb50335c0eeebc4e8a4440c24d3c0abc54ee45"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-S0_target_slot0_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-S0_target_slot0_matched_control_seed42.pth",
+      "checkpoint_sha256": "d164e7e8f7659824ed91b4e8fcbaa1b9ee744635194a72105a261857a43bf701"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          1
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-S0_target_slot1_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-S0_target_slot1_matched_control_seed42.pth",
+      "checkpoint_sha256": "8436c18a532ef9b4550a68b1832efe2d4b531aaf6701712ac77e55d9750b6706"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-S0",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-S0_target_slot2_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-S0_target_slot2_matched_control_seed42.pth",
+      "checkpoint_sha256": "01bd1d4b9b50a893bdef319b742684f376cf199c26a4521354fd04a114eaf451"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-D1_target_all3_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-D1_target_all3_matched_control_seed42.pth",
+      "checkpoint_sha256": "1eab7c714713b4321cb236207d0da3ff00372f9ccda31a74254a7ef19d381c87"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-D1_target_slot0_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-D1_target_slot0_matched_control_seed42.pth",
+      "checkpoint_sha256": "2263663727059bad67b00704e3c99c08dc1499dbe46d127a1f75956428db9aee"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          1
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-D1_target_slot1_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-D1_target_slot1_matched_control_seed42.pth",
+      "checkpoint_sha256": "fbcf3a77109636029713bd2268be549c5fb6eebe63f147a693c1b21dff5ccaaf"
+    },
+    {
+      "arm": {
+        "dataset": "waterpump",
+        "task": "WP-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "WP-D1_target_slot2_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/WP-D1_target_slot2_matched_control_seed42.pth",
+      "checkpoint_sha256": "0a9e9ae47c31233a06ce219910cdef4b665da14e10a8386c2f332fd1ee7ea1db"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-S1_target_all3_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-S1_target_all3_matched_control_seed42.pth",
+      "checkpoint_sha256": "71ce9e96440cc1984093eecd3f1201981a35dfdf7d70d2be3616b1c9c0e36b78"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          0
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-S1_target_slot0_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-S1_target_slot0_matched_control_seed42.pth",
+      "checkpoint_sha256": "f8f95b14845c6a15fda4eac0f48878f83555fe112fc086ad289aff5bb564a215"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          1
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-S1_target_slot1_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-S1_target_slot1_matched_control_seed42.pth",
+      "checkpoint_sha256": "48d9536842c5968a0b42d15267a80411702a9ac1b80bca743d28c6befcf1b55b"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-S1",
+        "family": "same_condition_cross_sensor",
+        "target": [
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-S1_target_slot2_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-S1_target_slot2_matched_control_seed42.pth",
+      "checkpoint_sha256": "a50f9b1bdf36afd3dedb01a61d7ac42480d79dfa280192ee0f39466bad8ea87f"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-D1_target_all3_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-D1_target_all3_matched_control_seed42.pth",
+      "checkpoint_sha256": "04304e8dda04efc33c4c4c0dd5b0c2eae9b76a4648403d61fe70cce1b5b2c9a4"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          0
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-D1_target_slot0_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-D1_target_slot0_matched_control_seed42.pth",
+      "checkpoint_sha256": "db5deb3a966d1f2860d2105e73e91b1b4ddcf142c150d162a4a26b4f96129e3a"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          1
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-D1_target_slot1_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-D1_target_slot1_matched_control_seed42.pth",
+      "checkpoint_sha256": "39770ac6a8684d193ce98a85c174d0d6fdc6eea7637dc45a13bcaae3dd2f09c3"
+    },
+    {
+      "arm": {
+        "dataset": "gearbox",
+        "task": "PG-D1",
+        "family": "cross_sensor_and_condition",
+        "target": [
+          2
+        ],
+        "variant": "matched_control",
+        "seed": 42,
+        "id": "PG-D1_target_slot2_matched_control_seed42"
+      },
+      "checkpoint": "reference/v4/checkpoints/PG-D1_target_slot2_matched_control_seed42.pth",
+      "checkpoint_sha256": "8aa388d16343813228d031f5820e82441d73795508481404f2d8feb6d99c7bf1"
+    }
+  ]
+}

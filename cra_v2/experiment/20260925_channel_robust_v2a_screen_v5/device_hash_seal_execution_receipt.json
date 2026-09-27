@@ -1,0 +1,9 @@
+{
+  "schema": "channel_robust_v2_device_hash_seal_execution_v1",
+  "status": "PASS",
+  "created_unix": 1790277224.13053,
+  "device_hash_correction_receipt_sha256": "80037471ad921094c2462bff126ab3187624f1338c0e4080ba1e3f5696c5ae69",
+  "predev_seal_sha256": "91900bf487e539182f8803a203fcc1b42e3b894fa762ec0e68b52223f960e149",
+  "target_dev_predictions_or_labels_read": false,
+  "target_final_evaluated": false
+}

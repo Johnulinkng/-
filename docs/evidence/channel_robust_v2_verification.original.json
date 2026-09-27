@@ -1,0 +1,16 @@
+{
+  "schema": "channel_robust_v2_delivery_verification_v1",
+  "status": "PASS",
+  "delivery": "20260925_channel_robust_v2_screen_v5",
+  "files_verified": 318,
+  "models_verified": 36,
+  "branch_checkpoints_verified": 32,
+  "screen_gate_passed": false,
+  "integrity_status": "PASS",
+  "performance_gate_status": "FAILED",
+  "device_hash_correction_verified": true,
+  "paper_report_verified": true,
+  "mechanism_evidence_verified": true,
+  "target_final_evaluated": false,
+  "manifest_sha256": "79e9a164bea3f2ca005b0148f4d178eb3f1174c966b66bf4fb7339d2210d8542"
+}

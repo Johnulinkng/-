@@ -1,0 +1,4 @@
+﻿source_id,evidence_tier,gate,passed,jointly_improved_conditions,mean_accuracy_delta,mean_macro_f1_delta,double_cross_macro_f1_delta
+v2a_seed42_development,development,causal_comparison.expansion_gate,False,7,-0.00341666666667,-0.00374165714416,-0.0197922819714
+v2a_seed42_development,development,formal_comparison.historical_threshold_diagnostic,False,7,0.031375,0.0528670169964,-0.0291405149778
+v4_frozen_reference_development,development,screen_gate,False,7,0.0262916666667,0.04629008074,-0.0189302520469

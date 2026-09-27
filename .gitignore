@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage*
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local data and private evaluation material
+data/
+datasets/
+data_versions/
+private_data/
+private_audit/
+raw_data/
+*.mat
+*.npy
+
+# Generated training outputs
+runs/
+outputs/
+predictions/
+checkpoints/
+*.log
+*.tmp
+*.lock
+
+# Local path configuration
+paths.local.json
+*.local.json
+
+# Archives belong in GitHub Releases
+*.zip
+*.7z
+*.tar
+*.tar.gz
+

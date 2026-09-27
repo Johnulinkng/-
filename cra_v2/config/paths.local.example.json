@@ -1,0 +1,30 @@
+{
+  "schema": "channel_robust_v2_local_paths_v1",
+  "note": "Copy this file outside the verified delivery or rename it before filling local paths.",
+  "tasks": {
+    "WP-S0": {
+      "public_root_windows": "<drive>:\\path\\to\\public_root",
+      "public_root_wsl": "/mnt/<drive>/path/to/public_root",
+      "private_audit_root_windows": "<drive>:\\path\\to\\private_audit_root",
+      "private_audit_root_wsl": "/mnt/<drive>/path/to/private_audit_root"
+    },
+    "WP-D1": {
+      "public_root_windows": "<drive>:\\path\\to\\public_root",
+      "public_root_wsl": "/mnt/<drive>/path/to/public_root",
+      "private_audit_root_windows": "<drive>:\\path\\to\\private_audit_root",
+      "private_audit_root_wsl": "/mnt/<drive>/path/to/private_audit_root"
+    },
+    "PG-S1": {
+      "public_root_windows": "<drive>:\\path\\to\\public_root",
+      "public_root_wsl": "/mnt/<drive>/path/to/public_root",
+      "private_audit_root_windows": "<drive>:\\path\\to\\private_audit_root",
+      "private_audit_root_wsl": "/mnt/<drive>/path/to/private_audit_root"
+    },
+    "PG-D1": {
+      "public_root_windows": "<drive>:\\path\\to\\public_root",
+      "public_root_wsl": "/mnt/<drive>/path/to/public_root",
+      "private_audit_root_windows": "<drive>:\\path\\to\\private_audit_root",
+      "private_audit_root_wsl": "/mnt/<drive>/path/to/private_audit_root"
+    }
+  }
+}

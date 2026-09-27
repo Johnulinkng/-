@@ -1,0 +1,140 @@
+{
+  "status": "completed",
+  "stage": "adaptation",
+  "variant": "channel_robust_alignment_v2a",
+  "run_id": "WP-D1_source012_target_slot0_channel_robust_alignment_v2a_seed42_cuda",
+  "task_id": "WP-D1",
+  "dataset": "waterpump",
+  "channels": {
+    "source": [
+      0,
+      1,
+      2
+    ],
+    "target": [
+      0
+    ]
+  },
+  "seed": 42,
+  "mask_seed": 424284,
+  "source_draw_seed": 525294,
+  "target_draw_seed": 626304,
+  "code_sha256": {
+    "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+    "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+    "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+    "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+    "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+    "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+    "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+    "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+  },
+  "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424",
+  "checkpoint_sha256": "f66182d936beef525d35e1e48968128945525228189818b2ee46c8e8ba56ff92",
+  "selected_epoch": 19,
+  "source_val": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_class_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "support": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ],
+    "confusion_matrix": [
+      [
+        150,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        150,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        150,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "loss": 0.0003996280205513661
+  },
+  "optimizer_steps": 920,
+  "alignment_steps": 920,
+  "applied_alignment_steps": 34,
+  "suppressed_alignment_steps": 886,
+  "completed_adaptation_epochs": 20,
+  "branch_start_identity": {
+    "model_state_sha256": "5c8cbb7beb56297a8b3fb0c289fbd875b95377612f176fe6b8e3527759bf934c",
+    "optimizer_state_sha256": "f1b36250d163add9ff59debc78b02c48b73d3cd5d4f4b2744d4dbc9b055c1297",
+    "scheduler_state_sha256": "9fdd643740ebfa4f6fb1475f2c5f419c419eee165558a5741bd19c7a7ca2c31e",
+    "rng_state_sha256": "2454f0f70458a69dc387c656817ed23f38f4cbf688eaa823d98db5c0c4b15f02",
+    "source_slot_cycle": {
+      "physical_slots": [
+        0,
+        1,
+        2
+      ],
+      "initial_cursor": 1,
+      "cursor": 1,
+      "rows_drawn": 0
+    },
+    "target_slot_cycle": {
+      "physical_slots": [
+        0
+      ],
+      "initial_cursor": 0,
+      "cursor": 0,
+      "rows_drawn": 0
+    },
+    "anchor_checkpoint_sha256": "9ff28fa17489dfa75270e7370498096b777de9aadd044015fb95d3a125398424"
+  },
+  "branch_source_indices_sha256": "872fec046643e8e969862d2a35d772a6476f90a89158208ee2dacd02dc5a2148",
+  "branch_source_masks_sha256": "7e480ae624e95cd5902f221445797f790df30cda132c482583fb44824228a555",
+  "training_seconds": 31.18461617199995,
+  "target_dev_evaluated": false,
+  "target_final_evaluated": false
+}

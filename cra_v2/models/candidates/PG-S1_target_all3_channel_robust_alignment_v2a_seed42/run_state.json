@@ -1,0 +1,129 @@
+{
+  "status": "completed",
+  "stage": "adaptation",
+  "variant": "channel_robust_alignment_v2a",
+  "run_id": "PG-S1_source012_target_all3_channel_robust_alignment_v2a_seed42_cuda",
+  "task_id": "PG-S1",
+  "dataset": "gearbox",
+  "channels": {
+    "source": [
+      0,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      1,
+      2
+    ]
+  },
+  "seed": 42,
+  "mask_seed": 424284,
+  "source_draw_seed": 525294,
+  "target_draw_seed": 626304,
+  "code_sha256": {
+    "train_channel_robust_alignment_v2.py": "5e8e86bd9c5bfbe911626870d3006a86f4503cb1a214548accff5fbf98ea0cfa",
+    "public_loader.py": "d117d193fc0ab050dfe308928f1631a2e9f11642ef7dc4c6995d9bce6248b993",
+    "channel_robust_alignment_v2.py": "3555cd9a935db606efd432458eb2c1fc5dc4d97f3998c6d683e6426c0a8fe772",
+    "channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+    "balanced_unbiased_mmd.py": "2fb4e6778f81cefc56dfb872730702fab4671f5785d646a1e67b787a33314d46",
+    "spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+    "spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+    "experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13"
+  },
+  "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691",
+  "checkpoint_sha256": "b73d0c481730ebfd13859b33f5e9c50c2c253f5e10b614d37eb483e3d78001b3",
+  "selected_epoch": 19,
+  "source_val": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_class_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "support": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "confusion_matrix": [
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "loss": 0.001041248943656683
+  },
+  "optimizer_steps": 160,
+  "alignment_steps": 160,
+  "applied_alignment_steps": 16,
+  "suppressed_alignment_steps": 144,
+  "completed_adaptation_epochs": 20,
+  "branch_start_identity": {
+    "model_state_sha256": "421a90cdd0537c33016d3326572e11cb37ec7633ed068cdcc41c8389c74a1140",
+    "optimizer_state_sha256": "d7c366aac3b4ba6f17656b9b143c221459e5db72a26546572595f251ab222077",
+    "scheduler_state_sha256": "109b346bc18689b3b5370d9b1414561e33732aca2fcafd05482c8b1f0493943f",
+    "rng_state_sha256": "2d5f3db73c65e532d9f6cbec80e880bb7b467fca1f59c604cc1df2f85bc445d5",
+    "source_slot_cycle": {
+      "physical_slots": [
+        0,
+        1,
+        2
+      ],
+      "initial_cursor": 1,
+      "cursor": 1,
+      "rows_drawn": 0
+    },
+    "target_slot_cycle": {
+      "physical_slots": [
+        0,
+        1,
+        2
+      ],
+      "initial_cursor": 0,
+      "cursor": 0,
+      "rows_drawn": 0
+    },
+    "anchor_checkpoint_sha256": "6ef6cb59ea1a808ba30f75ab6d068052ea95247293b8968be7b0f3163baa4691"
+  },
+  "branch_source_indices_sha256": "30e7afcfe028830908f54ffb07f3db079bc1d292379ee85d994ff1341584dbcd",
+  "branch_source_masks_sha256": "d3bdba8463ce778dfac9d07c323cc50ea34cd0648b4e90a3e96d87d54110a0c4",
+  "training_seconds": 5.159304302999999,
+  "target_dev_evaluated": false,
+  "target_final_evaluated": false
+}

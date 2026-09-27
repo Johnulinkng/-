@@ -1,0 +1,363 @@
+{
+  "study": "screen",
+  "arms": 32,
+  "target_final_evaluated": false,
+  "target_dev_history_boundary": "The same development partitions were used by earlier studies; this frozen campaign is a new matched comparison, not an untouched confirmation set.",
+  "variant_means": {
+    "channel_robust_alignment_v1": {
+      "accuracy": 0.5058333333333334,
+      "macro_f1": 0.49185627965441187
+    },
+    "matched_control": {
+      "accuracy": 0.4795416666666667,
+      "macro_f1": 0.44556619891441224
+    }
+  },
+  "screen_gate": {
+    "passed": false,
+    "jointly_improved_conditions": 7,
+    "mean_accuracy_delta": 0.026291666666666668,
+    "mean_macro_f1_delta": 0.046290080739999614,
+    "double_cross_macro_f1_delta": -0.018930252046941244,
+    "positive_slots_by_task": {
+      "WP-D1": 0,
+      "PG-D1": 2,
+      "PG-S1": 3,
+      "WP-S0": 1
+    },
+    "weakest_control_pair": {
+      "task": "PG-S1",
+      "target": [
+        2
+      ],
+      "seed": 42,
+      "family": "same_condition_cross_sensor",
+      "candidate_accuracy": 0.38,
+      "control_accuracy": 0.18,
+      "accuracy_delta": 0.2,
+      "candidate_macro_f1": 0.36942865882605314,
+      "control_macro_f1": 0.15697586726998491,
+      "macro_f1_delta": 0.21245279155606822,
+      "jointly_improved": true,
+      "new_zero_recall": false
+    },
+    "new_zero_recall_pairs": [
+      {
+        "task": "PG-D1",
+        "target": [
+          0
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.5,
+        "control_accuracy": 0.39,
+        "accuracy_delta": 0.10999999999999999,
+        "candidate_macro_f1": 0.4950980392156863,
+        "control_macro_f1": 0.3680263557154623,
+        "macro_f1_delta": 0.12707168350022396,
+        "jointly_improved": true,
+        "new_zero_recall": true
+      },
+      {
+        "task": "WP-D1",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.30533333333333335,
+        "control_accuracy": 0.38666666666666666,
+        "accuracy_delta": -0.08133333333333331,
+        "candidate_macro_f1": 0.2869882090025183,
+        "control_macro_f1": 0.34290244517432644,
+        "macro_f1_delta": -0.05591423617180813,
+        "jointly_improved": false,
+        "new_zero_recall": true
+      },
+      {
+        "task": "WP-D1",
+        "target": [
+          2
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.13066666666666665,
+        "control_accuracy": 0.2733333333333333,
+        "accuracy_delta": -0.14266666666666666,
+        "candidate_macro_f1": 0.14567781840129265,
+        "control_macro_f1": 0.27533105131115987,
+        "macro_f1_delta": -0.12965323290986722,
+        "jointly_improved": false,
+        "new_zero_recall": true
+      }
+    ],
+    "pairs": [
+      {
+        "task": "PG-D1",
+        "target": [
+          0
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.5,
+        "control_accuracy": 0.39,
+        "accuracy_delta": 0.10999999999999999,
+        "candidate_macro_f1": 0.4950980392156863,
+        "control_macro_f1": 0.3680263557154623,
+        "macro_f1_delta": 0.12707168350022396,
+        "jointly_improved": true,
+        "new_zero_recall": true
+      },
+      {
+        "task": "PG-D1",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.59,
+        "control_accuracy": 0.66,
+        "accuracy_delta": -0.07000000000000006,
+        "candidate_macro_f1": 0.5612287492410444,
+        "control_macro_f1": 0.5983907396950875,
+        "macro_f1_delta": -0.037161990454043115,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "PG-D1",
+        "target": [
+          1
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.53,
+        "control_accuracy": 0.62,
+        "accuracy_delta": -0.08999999999999997,
+        "candidate_macro_f1": 0.5283018867924528,
+        "control_macro_f1": 0.562810720419416,
+        "macro_f1_delta": -0.03450883362696322,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "PG-D1",
+        "target": [
+          2
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.71,
+        "control_accuracy": 0.68,
+        "accuracy_delta": 0.029999999999999916,
+        "candidate_macro_f1": 0.7041889483065954,
+        "control_macro_f1": 0.6295995670995671,
+        "macro_f1_delta": 0.0745893812070283,
+        "jointly_improved": true,
+        "new_zero_recall": false
+      },
+      {
+        "task": "PG-S1",
+        "target": [
+          0
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.68,
+        "control_accuracy": 0.44,
+        "accuracy_delta": 0.24000000000000005,
+        "candidate_macro_f1": 0.6653186875801269,
+        "control_macro_f1": 0.3621621621621622,
+        "macro_f1_delta": 0.30315652541796473,
+        "jointly_improved": true,
+        "new_zero_recall": false
+      },
+      {
+        "task": "PG-S1",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.77,
+        "control_accuracy": 0.42,
+        "accuracy_delta": 0.35000000000000003,
+        "candidate_macro_f1": 0.7681512605042018,
+        "control_macro_f1": 0.3570601851851852,
+        "macro_f1_delta": 0.4110910753190166,
+        "jointly_improved": true,
+        "new_zero_recall": false
+      },
+      {
+        "task": "PG-S1",
+        "target": [
+          1
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.48,
+        "control_accuracy": 0.36,
+        "accuracy_delta": 0.12,
+        "candidate_macro_f1": 0.4631934704690665,
+        "control_macro_f1": 0.30549932523616735,
+        "macro_f1_delta": 0.15769414523289915,
+        "jointly_improved": true,
+        "new_zero_recall": false
+      },
+      {
+        "task": "PG-S1",
+        "target": [
+          2
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.38,
+        "control_accuracy": 0.18,
+        "accuracy_delta": 0.2,
+        "candidate_macro_f1": 0.36942865882605314,
+        "control_macro_f1": 0.15697586726998491,
+        "macro_f1_delta": 0.21245279155606822,
+        "jointly_improved": true,
+        "new_zero_recall": false
+      },
+      {
+        "task": "WP-D1",
+        "target": [
+          0
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.424,
+        "control_accuracy": 0.444,
+        "accuracy_delta": -0.020000000000000018,
+        "candidate_macro_f1": 0.3548604100683435,
+        "control_macro_f1": 0.3913898460917356,
+        "macro_f1_delta": -0.03652943602339209,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "WP-D1",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.30533333333333335,
+        "control_accuracy": 0.38666666666666666,
+        "accuracy_delta": -0.08133333333333331,
+        "candidate_macro_f1": 0.2869882090025183,
+        "control_macro_f1": 0.34290244517432644,
+        "macro_f1_delta": -0.05591423617180813,
+        "jointly_improved": false,
+        "new_zero_recall": true
+      },
+      {
+        "task": "WP-D1",
+        "target": [
+          1
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.22133333333333333,
+        "control_accuracy": 0.268,
+        "accuracy_delta": -0.04666666666666669,
+        "candidate_macro_f1": 0.2361779881813873,
+        "control_macro_f1": 0.2955133400780957,
+        "macro_f1_delta": -0.05933535189670841,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "WP-D1",
+        "target": [
+          2
+        ],
+        "seed": 42,
+        "family": "cross_sensor_and_condition",
+        "candidate_accuracy": 0.13066666666666665,
+        "control_accuracy": 0.2733333333333333,
+        "accuracy_delta": -0.14266666666666666,
+        "candidate_macro_f1": 0.14567781840129265,
+        "control_macro_f1": 0.27533105131115987,
+        "macro_f1_delta": -0.12965323290986722,
+        "jointly_improved": false,
+        "new_zero_recall": true
+      },
+      {
+        "task": "WP-S0",
+        "target": [
+          0
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.6186666666666667,
+        "control_accuracy": 0.6506666666666666,
+        "accuracy_delta": -0.03199999999999992,
+        "candidate_macro_f1": 0.5956881091628723,
+        "control_macro_f1": 0.6378145833593314,
+        "macro_f1_delta": -0.042126474196459096,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "WP-S0",
+        "target": [
+          0,
+          1,
+          2
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.6226666666666667,
+        "control_accuracy": 0.6893333333333334,
+        "accuracy_delta": -0.06666666666666665,
+        "candidate_macro_f1": 0.6014822267419315,
+        "control_macro_f1": 0.6712592379167746,
+        "macro_f1_delta": -0.06977701117484303,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "WP-S0",
+        "target": [
+          1
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.48933333333333334,
+        "control_accuracy": 0.5866666666666667,
+        "accuracy_delta": -0.09733333333333333,
+        "candidate_macro_f1": 0.48091165318005763,
+        "control_macro_f1": 0.5703633806721309,
+        "macro_f1_delta": -0.08945172749207325,
+        "jointly_improved": false,
+        "new_zero_recall": false
+      },
+      {
+        "task": "WP-S0",
+        "target": [
+          2
+        ],
+        "seed": 42,
+        "family": "same_condition_cross_sensor",
+        "candidate_accuracy": 0.6413333333333333,
+        "control_accuracy": 0.624,
+        "accuracy_delta": 0.01733333333333331,
+        "candidate_macro_f1": 0.6130043587969595,
+        "control_macro_f1": 0.603960375244009,
+        "macro_f1_delta": 0.009043983552950441,
+        "jointly_improved": true,
+        "new_zero_recall": false
+      }
+    ]
+  }
+}

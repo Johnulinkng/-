@@ -1,0 +1,601 @@
+{
+  "kind": "channel_robust_alignment_campaign_v1",
+  "study": "screen",
+  "created_unix": 1790267594.2483542,
+  "output": "/mnt/d/3800/experiments/20260925_channel_robust_screen_v4",
+  "arms": [
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_all3_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot0_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot1_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-S0_target_slot2_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-S0",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-S0_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_all3_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot0_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot1_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "WP-D1_target_slot2_matched_control_seed42"
+    },
+    {
+      "dataset": "waterpump",
+      "task": "WP-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "WP-D1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_all3_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot0_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot1_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-S1_target_slot2_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-S1",
+      "family": "same_condition_cross_sensor",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-S1_target_slot2_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_all3_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_all3_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot0_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        0
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot0_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot1_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        1
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot1_channel_robust_alignment_v1_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "matched_control",
+      "seed": 42,
+      "id": "PG-D1_target_slot2_matched_control_seed42"
+    },
+    {
+      "dataset": "gearbox",
+      "task": "PG-D1",
+      "family": "cross_sensor_and_condition",
+      "target": [
+        2
+      ],
+      "variant": "channel_robust_alignment_v1",
+      "seed": 42,
+      "id": "PG-D1_target_slot2_channel_robust_alignment_v1_seed42"
+    }
+  ],
+  "data": {
+    "WP-S0": {
+      "root": "/mnt/d/3800/data_versions/antipair_v1_waterpump_source_first",
+      "sha256": {
+        "version_manifest.json": "8becfde39d4f16cdb50ded5cca8e33bcd487aed89c8cb2cf79194108d5c9c15a",
+        "build_plan.json": "731e55ce59be9f8410d610dfea9de531eb6ac6e8b840e34bcfacd0be65125520",
+        "tasks/WP-S0/task_manifest.json": "510c579fb94cc90634f2c3d9b3b04ae69dd9cef596ace022a33664ea5ec8d09e"
+      }
+    },
+    "WP-D1": {
+      "root": "/mnt/d/3800/data_versions/antipair_v1_waterpump_source_first",
+      "sha256": {
+        "version_manifest.json": "8becfde39d4f16cdb50ded5cca8e33bcd487aed89c8cb2cf79194108d5c9c15a",
+        "build_plan.json": "731e55ce59be9f8410d610dfea9de531eb6ac6e8b840e34bcfacd0be65125520",
+        "tasks/WP-D1/task_manifest.json": "8086ba04d13697e7b13a3f78c0a7a91076dadd6bf217195e1b4d01689d03a5d7"
+      }
+    },
+    "PG-S1": {
+      "root": "/mnt/d/3800/data_versions/antipair_v1_gearbox_source_first",
+      "sha256": {
+        "version_manifest.json": "55b72b95ba715f46c03026036b219f22891b102ef97c88a6c08426952f7cc49a",
+        "build_plan.json": "d434062528ede88c93d4a8179892802e3ce2f1d671d6d20c649404bd18fcc253",
+        "tasks/PG-S1/task_manifest.json": "5a9677e27b2653f118bc6a0884965b7a52ddefc401b4cbd8e7cd9e62bd569f98"
+      }
+    },
+    "PG-D1": {
+      "root": "/mnt/d/3800/data_versions/antipair_v1_gearbox_source_first",
+      "sha256": {
+        "version_manifest.json": "55b72b95ba715f46c03026036b219f22891b102ef97c88a6c08426952f7cc49a",
+        "build_plan.json": "d434062528ede88c93d4a8179892802e3ce2f1d671d6d20c649404bd18fcc253",
+        "tasks/PG-D1/task_manifest.json": "044a8fa373ab049eadcbb2568c3605f8e9ee6e7772e2afe00c3c79bda57181a4"
+      }
+    }
+  },
+  "task_metadata": {
+    "WP-S0": {
+      "dataset": "waterpump",
+      "family": "same_condition_cross_sensor",
+      "manifest_task_type": "同工况跨传感器",
+      "source": {
+        "condition": "C1",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C1",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "classes": 5
+    },
+    "WP-D1": {
+      "dataset": "waterpump",
+      "family": "cross_sensor_and_condition",
+      "manifest_task_type": "跨工况 + 跨传感器",
+      "source": {
+        "condition": "C2",
+        "group": "P1",
+        "raw_columns_zero_based": [
+          7,
+          8,
+          9
+        ]
+      },
+      "target": {
+        "condition": "C3",
+        "group": "P2",
+        "raw_columns_zero_based": [
+          10,
+          12,
+          11
+        ]
+      },
+      "classes": 5
+    },
+    "PG-S1": {
+      "dataset": "gearbox",
+      "family": "same_condition_cross_sensor",
+      "manifest_task_type": "同工况跨传感器",
+      "source": {
+        "condition": "C1",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C1",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "classes": 4
+    },
+    "PG-D1": {
+      "dataset": "gearbox",
+      "family": "cross_sensor_and_condition",
+      "manifest_task_type": "跨工况 + 跨传感器",
+      "source": {
+        "condition": "C4",
+        "group": "G2",
+        "raw_columns_zero_based": [
+          3,
+          4,
+          5
+        ]
+      },
+      "target": {
+        "condition": "C3",
+        "group": "G3",
+        "raw_columns_zero_based": [
+          6,
+          7,
+          8
+        ]
+      },
+      "classes": 4
+    }
+  },
+  "training": {
+    "device": "cuda",
+    "strict_cuda": true,
+    "cublas_workspace_config": ":4096:8",
+    "gpu_memory_fraction": 0.3,
+    "cpu_threads": 1,
+    "batch_size": 32,
+    "max_epoch": 60,
+    "middle_epoch": 20,
+    "selection_start_epoch": 21,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "adaptation_weight": 0.1,
+    "max_grad_norm": 5.0,
+    "max_seconds": 1800,
+    "spectral_grid": "low3k_pool2",
+    "encoder_width": 64,
+    "mask_seed_base": 424242
+  },
+  "variant_contracts": {
+    "matched_control": {
+      "fusion": "mean",
+      "mask": false,
+      "alignment": false,
+      "safe_projection": false
+    },
+    "fusion_only": {
+      "fusion": "bounded_attention",
+      "mask": false,
+      "alignment": false,
+      "safe_projection": false
+    },
+    "fusion_mask": {
+      "fusion": "bounded_attention",
+      "mask": true,
+      "alignment": false,
+      "safe_projection": false
+    },
+    "fusion_mask_mmd": {
+      "fusion": "bounded_attention",
+      "mask": true,
+      "alignment": true,
+      "safe_projection": false
+    },
+    "channel_robust_alignment_v1": {
+      "fusion": "bounded_attention",
+      "mask": true,
+      "alignment": true,
+      "safe_projection": true
+    }
+  },
+  "loss_contract": {
+    "fusion_residual_strength": 0.5,
+    "masked_ce_weight": 0.5,
+    "consistency_weight": 0.1,
+    "attention_balance_weight": 0.01,
+    "channel_alignment_weight": 0.5
+  },
+  "code_sha256": {
+    "protocol_next/run_channel_robust_campaign.py": "d9a17745ceab0b38a14011410cc71917008f7990e0fbc47e2074329f10ab8c9b",
+    "protocol_next/start_channel_robust_campaign.ps1": "fa679641a7dcd1c098e603ec9ef2b14079712ca0d40cddb8903bf5c6c69c41e6",
+    "protocol_next/train_channel_robust_alignment.py": "9e8cd33ee94bf6da95af4ac444b34abb53c33bae31824ed56e4d06b6ba63930c",
+    "protocol_next/evaluate_channel_robust_alignment_dev.py": "0bb86785934e3e2db165c6b9c6cebcf661a28a2bd301ebaadceedee5980ea031",
+    "protocol_next/public_loader.py": "4606f5437a8906a48d7f593fca301b0c50313aa3f5d61c240702445c88b26360",
+    "protocol_next/private_evaluator.py": "4427adaf5caf23cf88f1cf81dc493959dce859ac6e030d36634939689276c8f1",
+    "protocol_next/antipair_builder.py": "c6353e657e8b8af8902922f3e5acfe12e712c7399f079bd5c0005cbced2374aa",
+    "workbench/models/channel_robust_alignment.py": "46be59c7417ce7fa6c187328443a53b65f21ffefcdd67d9591ae520b186aab79",
+    "workbench/models/spectral_grid_pilot.py": "f018b6de1823239676f5f209e95af6205e94c9a73104eb21781113095a4486ab",
+    "workbench/models/spectral_shared.py": "2ab2f874593ba93de58fe5986765d5519d7f0e7c167d0dde31d1128bc9730ee8",
+    "workbench/loss/DAN.py": "160a8eb376c70d8480ad31ad0b96d2f3ae88b1e9eea6486029bb6f6a05efe5ff",
+    "workbench/experiment_protocol.py": "c7a20c8a2450366f51da90efc1776975528b3011ba7bf9ebec3fa4f7a7e6ab13",
+    "audit/channel_robust_alignment_predev_20260925.md": "55d43d344bfde6d683e4ec8f6fd547020993a2a0f9e78f5efb9262a75566e2ed"
+  },
+  "information_boundary": {
+    "training_labels": "source train and source validation only",
+    "target_train_labels": "must equal -1",
+    "synchronous_pairs_used": false,
+    "checkpoint_selection": "source validation accuracy, CE, earliest epoch",
+    "target_dev": "all fits and checkpoint hashes sealed before first score; development evidence only",
+    "target_final_evaluated": false
+  },
+  "screen_gate": {
+    "candidate": "channel_robust_alignment_v1",
+    "control": "matched_control",
+    "minimum_jointly_improved_conditions": 10,
+    "minimum_core_accuracy_delta": 0.01,
+    "minimum_core_macro_f1_delta": 0.02,
+    "minimum_double_cross_macro_f1_delta": 0.02,
+    "minimum_positive_slots_per_3to1_task": 2,
+    "weakest_3to1_macro_f1_must_improve": true,
+    "no_new_zero_recall": true
+  },
+  "target_dev_history_boundary": "The same development partitions were used by earlier studies; this frozen campaign is a new matched comparison, not an untouched confirmation set."
+}

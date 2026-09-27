@@ -1,0 +1,28 @@
+﻿evidence_tier,requirement,covered
+development,3-to-3 same-condition,True
+development,3-to-3 double-cross,True
+development,3-to-1 slot0,True
+development,3-to-1 slot1,True
+development,3-to-1 slot2,True
+development,noise SNR clean,False
+development,noise SNR 20,False
+development,noise SNR 10,False
+development,noise SNR 0,False
+external,3-to-3 same-condition,False
+external,3-to-3 double-cross,False
+external,3-to-1 slot0,False
+external,3-to-1 slot1,False
+external,3-to-1 slot2,False
+external,noise SNR clean,False
+external,noise SNR 20,False
+external,noise SNR 10,False
+external,noise SNR 0,False
+final,3-to-3 same-condition,False
+final,3-to-3 double-cross,False
+final,3-to-1 slot0,False
+final,3-to-1 slot1,False
+final,3-to-1 slot2,False
+final,noise SNR clean,False
+final,noise SNR 20,False
+final,noise SNR 10,False
+final,noise SNR 0,False

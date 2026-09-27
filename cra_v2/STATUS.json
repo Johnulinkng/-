@@ -1,0 +1,41 @@
+{
+  "schema": "channel_robust_v2_delivery_status_v1",
+  "campaign_completed": true,
+  "campaign_name": "20260925_channel_robust_v2a_screen_v5",
+  "campaign_directory": "experiment/20260925_channel_robust_v2a_screen_v5",
+  "campaign_plan_sha256": "8bf146d8412b4aaef104e2ae39769a42494597880090d1d36b072e1b85f6fac9",
+  "source_anchor_count": 4,
+  "branch_checkpoint_count": 32,
+  "control_checkpoint_count": 16,
+  "candidate_checkpoint_count": 16,
+  "shared_model_structure": true,
+  "separate_checkpoint_per_target_view": true,
+  "screen_gate_passed": false,
+  "integrity_status": "PASS",
+  "performance_gate_status": "FAILED",
+  "recommended_model_id": null,
+  "intended_use": "research_evaluation_only",
+  "promotion_status": "not_promoted_beyond_completed_system_evaluation",
+  "target_dev_evaluated": true,
+  "target_final_evaluated": false,
+  "awgn_evaluated": false,
+  "awgn_result_count": 0,
+  "awgn_scope": "not_run",
+  "paper_report_included": true,
+  "mechanism_evidence_included": true,
+  "paper_report": {
+    "path": "paper_report/REPORT.md",
+    "receipt": "paper_report/report_receipt.json",
+    "receipt_sha256": "890a960253f71a9b08ddf149adfbf93466bbc30f82f3d679d4f41359dd3e7fab",
+    "manifest": "paper_report/report_manifest.json",
+    "manifest_sha256": "58cca3d1deabb9a70b2cfc66f76dcb5c4427f722cd88ea15321a3d2912242747",
+    "integrity_status": "PASS",
+    "performance_gate_status": "FAILED",
+    "promotion_status": "NOT_PROMOTED"
+  },
+  "completed_campaign_audit": {
+    "path": "audit/completed_v2_campaign_audit.json",
+    "status": "PASS",
+    "audit_code_sha256": "146e8b95bdfb1765c8ed7e0689d05c3ac8b24cb9934cd4278dae3460d2ee93be"
+  }
+}
